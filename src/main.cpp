@@ -19,5 +19,7 @@ int main(int argc, char* argv[]){
     std::string contents;
     readFile(contents, "../input.test");
     //readFile(contents, argv[1]);
-    std::cout << contents << std::endl;
+   Tokenize tokenizer(contents);
+   std::vector<Token>TokenType = tokenizer.tokenize();
+   std::cout << "hi";
 }
