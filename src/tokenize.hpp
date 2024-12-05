@@ -31,3 +31,24 @@ struct Token{
     std::optional<std::string> value {}; 
     int theLine; //hold lne where instruction is 
 };
+
+std::map<std::string, TokenType> HashMap = 
+{ {"leave", TokenType::LEAVE},
+  {"and", TokenType::AND},
+  {"class", TokenType::CLASS},
+  {"else", TokenType::ELSE},
+  {"false", TokenType::FALSE},
+  {"fun", TokenType::FUN},
+  {"for", TokenType::FOR},
+  {"if", TokenType::IF},
+  {"nil", TokenType::NIL},
+  {"or", TokenType::OR},
+  {"print", TokenType::PRINT},
+  {"return", TokenType::RETURN},
+  {"super", TokenType::SUPER},
+  {"this", TokenType::THIS},
+  {"true", TokenType::TRUE},
+  {"let", TokenType::LET},
+  {"var", TokenType::VAR},
+  {"while", TokenType::WHILE},
+};
