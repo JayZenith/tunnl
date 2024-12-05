@@ -1,0 +1,3 @@
+/home/jayz/Desktop/C++Interpreter/build/CMakeFiles/main.dir
+/home/jayz/Desktop/C++Interpreter/build/CMakeFiles/edit_cache.dir
+/home/jayz/Desktop/C++Interpreter/build/CMakeFiles/rebuild_cache.dir
