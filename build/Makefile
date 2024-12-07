@@ -117,24 +117,72 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named lox
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
+lox: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lox
+.PHONY : lox
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+lox/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/build
+.PHONY : lox/fast
+
+src/Scanner.o: src/Scanner.cpp.o
+.PHONY : src/Scanner.o
+
+# target to build an object file
+src/Scanner.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Scanner.cpp.o
+.PHONY : src/Scanner.cpp.o
+
+src/Scanner.i: src/Scanner.cpp.i
+.PHONY : src/Scanner.i
+
+# target to preprocess a source file
+src/Scanner.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Scanner.cpp.i
+.PHONY : src/Scanner.cpp.i
+
+src/Scanner.s: src/Scanner.cpp.s
+.PHONY : src/Scanner.s
+
+# target to generate assembly for a file
+src/Scanner.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Scanner.cpp.s
+.PHONY : src/Scanner.cpp.s
+
+src/Token.o: src/Token.cpp.o
+.PHONY : src/Token.o
+
+# target to build an object file
+src/Token.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Token.cpp.o
+.PHONY : src/Token.cpp.o
+
+src/Token.i: src/Token.cpp.i
+.PHONY : src/Token.i
+
+# target to preprocess a source file
+src/Token.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Token.cpp.i
+.PHONY : src/Token.cpp.i
+
+src/Token.s: src/Token.cpp.s
+.PHONY : src/Token.s
+
+# target to generate assembly for a file
+src/Token.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Token.cpp.s
+.PHONY : src/Token.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -142,7 +190,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -150,7 +198,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -161,7 +209,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... main"
+	@echo "... lox"
+	@echo "... src/Scanner.o"
+	@echo "... src/Scanner.i"
+	@echo "... src/Scanner.s"
+	@echo "... src/Token.o"
+	@echo "... src/Token.i"
+	@echo "... src/Token.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
