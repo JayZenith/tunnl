@@ -6,7 +6,6 @@
 
 Scanner::Scanner(const std::string& source) : source(std::move(source))
 {
-    std::cout << "the source: " << source << std::endl;
     /* clang-format off */
     keywords = {
         {"and", TokenType::AND},
@@ -36,7 +35,6 @@ std::vector<Token> Scanner::scanTokens()
         scanToken();
     }
     tokens.emplace_back(TokenType::TokenEOF, "", line);
-    std::cout << "test";
     return tokens;
 }
 

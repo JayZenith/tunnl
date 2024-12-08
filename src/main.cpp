@@ -11,11 +11,9 @@
 
 
 void run(std::string& contents){
-    //Lox::Tokenize tokenizer{contents};
-    
-
-    //std::vector<Lox::Token> tokens = scanner.scanTokens();
-    
+    Scanner scanner(contents);
+    std::vector<Token> toks = scanner.scanTokens();
+    std::cout << "hi";    
 }
 
 
@@ -24,11 +22,22 @@ void readFile(std::string& contents, std::string arg){
     std::stringstream strm;
     strm << input.rdbuf();
     contents = strm.str();
-    std::cout << "von: " << contents << std::endl;
-    Scanner scanner(contents);
-    std::vector<Token> toks = scanner.scanTokens();
-    std::cout << "hi";
-    //run(contents);
+    run(contents);
+}
+
+void runPrompt(){
+    std::cout << "C++ Lox Interpreter\n";
+    std::string code;
+    while(true){
+        std::cout << "> ";
+        if(std::getline(std::cin, code)){
+            run(code);
+            //had error = false;
+        } else {
+            std::cout << "\n";
+            break;
+        }
+    }
 }
 
 int main(int argc, char* argv[]){
@@ -44,8 +53,7 @@ int main(int argc, char* argv[]){
     */
 
     std::string contents;
+    runPrompt();
     readFile(contents, "../input.test");
-        //readFile(contents, argv[1]);
-    //Tokenize tokenizer(contents);
-    //std::vector<Token>TokenType = tokenizer.tokenize();
+    //readFile(contents, argv[1]);
 }
