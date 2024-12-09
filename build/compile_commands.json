@@ -16,5 +16,11 @@
   "command": "/usr/bin/c++   -g -std=gnu++17 -o CMakeFiles/lox.dir/src/Token.cpp.o -c /home/jayz/Desktop/C++Interpreter/src/Token.cpp",
   "file": "/home/jayz/Desktop/C++Interpreter/src/Token.cpp",
   "output": "CMakeFiles/lox.dir/src/Token.cpp.o"
+},
+{
+  "directory": "/home/jayz/Desktop/C++Interpreter/build",
+  "command": "/usr/bin/c++   -g -std=gnu++17 -o CMakeFiles/lox.dir/src/Parser.cpp.o -c /home/jayz/Desktop/C++Interpreter/src/Parser.cpp",
+  "file": "/home/jayz/Desktop/C++Interpreter/src/Parser.cpp",
+  "output": "CMakeFiles/lox.dir/src/Parser.cpp.o"
 }
 ]

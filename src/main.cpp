@@ -8,11 +8,14 @@
 //#include "./tokenize.hpp"
 //#include "../include/lox/Token.h"
 #include "../include/lox/Scanner.h"
+#include "../include/lox/Parser.h"
+
 
 
 void run(std::string& contents){
     Scanner scanner(contents);
-    std::vector<Token> toks = scanner.scanTokens();
+    //std::vector<Token> toks = scanner.scanTokens();
+    Parser parser{scanner.scanTokens()};
     std::cout << "hi";    
 }
 
@@ -53,7 +56,7 @@ int main(int argc, char* argv[]){
     */
 
     std::string contents;
-    runPrompt();
+    //runPrompt();
     readFile(contents, "../input.test");
     //readFile(contents, argv[1]);
 }

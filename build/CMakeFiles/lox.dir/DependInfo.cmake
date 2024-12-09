@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/jayz/Desktop/C++Interpreter/src/Parser.cpp" "CMakeFiles/lox.dir/src/Parser.cpp.o" "gcc" "CMakeFiles/lox.dir/src/Parser.cpp.o.d"
   "/home/jayz/Desktop/C++Interpreter/src/Scanner.cpp" "CMakeFiles/lox.dir/src/Scanner.cpp.o" "gcc" "CMakeFiles/lox.dir/src/Scanner.cpp.o.d"
   "/home/jayz/Desktop/C++Interpreter/src/Token.cpp" "CMakeFiles/lox.dir/src/Token.cpp.o" "gcc" "CMakeFiles/lox.dir/src/Token.cpp.o.d"
   "/home/jayz/Desktop/C++Interpreter/src/main.cpp" "CMakeFiles/lox.dir/src/main.cpp.o" "gcc" "CMakeFiles/lox.dir/src/main.cpp.o.d"

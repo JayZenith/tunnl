@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/lox.dir/link.d"
+  "CMakeFiles/lox.dir/src/Parser.cpp.o"
+  "CMakeFiles/lox.dir/src/Parser.cpp.o.d"
   "CMakeFiles/lox.dir/src/Scanner.cpp.o"
   "CMakeFiles/lox.dir/src/Scanner.cpp.o.d"
   "CMakeFiles/lox.dir/src/Token.cpp.o"

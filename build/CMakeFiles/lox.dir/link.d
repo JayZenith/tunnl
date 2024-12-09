@@ -5,6 +5,7 @@ lox: \
   CMakeFiles/lox.dir/src/main.cpp.o \
   CMakeFiles/lox.dir/src/Scanner.cpp.o \
   CMakeFiles/lox.dir/src/Token.cpp.o \
+  CMakeFiles/lox.dir/src/Parser.cpp.o \
   /usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.so \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libm.so \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libm.so \
@@ -45,6 +46,8 @@ CMakeFiles/lox.dir/src/main.cpp.o:
 CMakeFiles/lox.dir/src/Scanner.cpp.o:
 
 CMakeFiles/lox.dir/src/Token.cpp.o:
+
+CMakeFiles/lox.dir/src/Parser.cpp.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.so:
 
