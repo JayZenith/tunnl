@@ -129,6 +129,102 @@ lox/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/build
 .PHONY : lox/fast
 
+src/Expr/LiteralExpr.o: src/Expr/LiteralExpr.cpp.o
+.PHONY : src/Expr/LiteralExpr.o
+
+# target to build an object file
+src/Expr/LiteralExpr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.o
+.PHONY : src/Expr/LiteralExpr.cpp.o
+
+src/Expr/LiteralExpr.i: src/Expr/LiteralExpr.cpp.i
+.PHONY : src/Expr/LiteralExpr.i
+
+# target to preprocess a source file
+src/Expr/LiteralExpr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.i
+.PHONY : src/Expr/LiteralExpr.cpp.i
+
+src/Expr/LiteralExpr.s: src/Expr/LiteralExpr.cpp.s
+.PHONY : src/Expr/LiteralExpr.s
+
+# target to generate assembly for a file
+src/Expr/LiteralExpr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.s
+.PHONY : src/Expr/LiteralExpr.cpp.s
+
+src/Expr/VarExpr.o: src/Expr/VarExpr.cpp.o
+.PHONY : src/Expr/VarExpr.o
+
+# target to build an object file
+src/Expr/VarExpr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.o
+.PHONY : src/Expr/VarExpr.cpp.o
+
+src/Expr/VarExpr.i: src/Expr/VarExpr.cpp.i
+.PHONY : src/Expr/VarExpr.i
+
+# target to preprocess a source file
+src/Expr/VarExpr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.i
+.PHONY : src/Expr/VarExpr.cpp.i
+
+src/Expr/VarExpr.s: src/Expr/VarExpr.cpp.s
+.PHONY : src/Expr/VarExpr.s
+
+# target to generate assembly for a file
+src/Expr/VarExpr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.s
+.PHONY : src/Expr/VarExpr.cpp.s
+
+src/Interpreter.o: src/Interpreter.cpp.o
+.PHONY : src/Interpreter.o
+
+# target to build an object file
+src/Interpreter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Interpreter.cpp.o
+.PHONY : src/Interpreter.cpp.o
+
+src/Interpreter.i: src/Interpreter.cpp.i
+.PHONY : src/Interpreter.i
+
+# target to preprocess a source file
+src/Interpreter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Interpreter.cpp.i
+.PHONY : src/Interpreter.cpp.i
+
+src/Interpreter.s: src/Interpreter.cpp.s
+.PHONY : src/Interpreter.s
+
+# target to generate assembly for a file
+src/Interpreter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Interpreter.cpp.s
+.PHONY : src/Interpreter.cpp.s
+
+src/Lox.o: src/Lox.cpp.o
+.PHONY : src/Lox.o
+
+# target to build an object file
+src/Lox.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Lox.cpp.o
+.PHONY : src/Lox.cpp.o
+
+src/Lox.i: src/Lox.cpp.i
+.PHONY : src/Lox.i
+
+# target to preprocess a source file
+src/Lox.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Lox.cpp.i
+.PHONY : src/Lox.cpp.i
+
+src/Lox.s: src/Lox.cpp.s
+.PHONY : src/Lox.s
+
+# target to generate assembly for a file
+src/Lox.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Lox.cpp.s
+.PHONY : src/Lox.cpp.s
+
 src/Parser.o: src/Parser.cpp.o
 .PHONY : src/Parser.o
 
@@ -176,6 +272,30 @@ src/Scanner.s: src/Scanner.cpp.s
 src/Scanner.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Scanner.cpp.s
 .PHONY : src/Scanner.cpp.s
+
+src/Stmt/PrintStmt.o: src/Stmt/PrintStmt.cpp.o
+.PHONY : src/Stmt/PrintStmt.o
+
+# target to build an object file
+src/Stmt/PrintStmt.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.o
+.PHONY : src/Stmt/PrintStmt.cpp.o
+
+src/Stmt/PrintStmt.i: src/Stmt/PrintStmt.cpp.i
+.PHONY : src/Stmt/PrintStmt.i
+
+# target to preprocess a source file
+src/Stmt/PrintStmt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.i
+.PHONY : src/Stmt/PrintStmt.cpp.i
+
+src/Stmt/PrintStmt.s: src/Stmt/PrintStmt.cpp.s
+.PHONY : src/Stmt/PrintStmt.s
+
+# target to generate assembly for a file
+src/Stmt/PrintStmt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.s
+.PHONY : src/Stmt/PrintStmt.cpp.s
 
 src/Token.o: src/Token.cpp.o
 .PHONY : src/Token.o
@@ -234,12 +354,27 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... lox"
+	@echo "... src/Expr/LiteralExpr.o"
+	@echo "... src/Expr/LiteralExpr.i"
+	@echo "... src/Expr/LiteralExpr.s"
+	@echo "... src/Expr/VarExpr.o"
+	@echo "... src/Expr/VarExpr.i"
+	@echo "... src/Expr/VarExpr.s"
+	@echo "... src/Interpreter.o"
+	@echo "... src/Interpreter.i"
+	@echo "... src/Interpreter.s"
+	@echo "... src/Lox.o"
+	@echo "... src/Lox.i"
+	@echo "... src/Lox.s"
 	@echo "... src/Parser.o"
 	@echo "... src/Parser.i"
 	@echo "... src/Parser.s"
 	@echo "... src/Scanner.o"
 	@echo "... src/Scanner.i"
 	@echo "... src/Scanner.s"
+	@echo "... src/Stmt/PrintStmt.o"
+	@echo "... src/Stmt/PrintStmt.i"
+	@echo "... src/Stmt/PrintStmt.s"
 	@echo "... src/Token.o"
 	@echo "... src/Token.i"
 	@echo "... src/Token.s"

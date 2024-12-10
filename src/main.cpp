@@ -7,6 +7,7 @@
 
 //#include "./tokenize.hpp"
 //#include "../include/lox/Token.h"
+#include "../include/lox/Interpreter.h"
 #include "../include/lox/Scanner.h"
 #include "../include/lox/Parser.h"
 
@@ -16,7 +17,13 @@ void run(std::string& contents){
     Scanner scanner(contents);
     //std::vector<Token> toks = scanner.scanTokens();
     Parser parser{scanner.scanTokens()};
-    std::cout << "hi";    
+        std::cout << "here" << std::endl;
+
+    const auto statements = parser.parse();
+    Interpreter I(std::cout);
+    I.intepret(statements);
+    //std::cout << "hi";   
+    
 }
 
 

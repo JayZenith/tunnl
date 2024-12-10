@@ -22,5 +22,35 @@
   "command": "/usr/bin/c++   -g -std=gnu++17 -o CMakeFiles/lox.dir/src/Parser.cpp.o -c /home/jayz/Desktop/C++Interpreter/src/Parser.cpp",
   "file": "/home/jayz/Desktop/C++Interpreter/src/Parser.cpp",
   "output": "CMakeFiles/lox.dir/src/Parser.cpp.o"
+},
+{
+  "directory": "/home/jayz/Desktop/C++Interpreter/build",
+  "command": "/usr/bin/c++   -g -std=gnu++17 -o CMakeFiles/lox.dir/src/Interpreter.cpp.o -c /home/jayz/Desktop/C++Interpreter/src/Interpreter.cpp",
+  "file": "/home/jayz/Desktop/C++Interpreter/src/Interpreter.cpp",
+  "output": "CMakeFiles/lox.dir/src/Interpreter.cpp.o"
+},
+{
+  "directory": "/home/jayz/Desktop/C++Interpreter/build",
+  "command": "/usr/bin/c++   -g -std=gnu++17 -o CMakeFiles/lox.dir/src/Lox.cpp.o -c /home/jayz/Desktop/C++Interpreter/src/Lox.cpp",
+  "file": "/home/jayz/Desktop/C++Interpreter/src/Lox.cpp",
+  "output": "CMakeFiles/lox.dir/src/Lox.cpp.o"
+},
+{
+  "directory": "/home/jayz/Desktop/C++Interpreter/build",
+  "command": "/usr/bin/c++   -g -std=gnu++17 -o CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.o -c /home/jayz/Desktop/C++Interpreter/src/Expr/LiteralExpr.cpp",
+  "file": "/home/jayz/Desktop/C++Interpreter/src/Expr/LiteralExpr.cpp",
+  "output": "CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.o"
+},
+{
+  "directory": "/home/jayz/Desktop/C++Interpreter/build",
+  "command": "/usr/bin/c++   -g -std=gnu++17 -o CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.o -c /home/jayz/Desktop/C++Interpreter/src/Expr/VarExpr.cpp",
+  "file": "/home/jayz/Desktop/C++Interpreter/src/Expr/VarExpr.cpp",
+  "output": "CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.o"
+},
+{
+  "directory": "/home/jayz/Desktop/C++Interpreter/build",
+  "command": "/usr/bin/c++   -g -std=gnu++17 -o CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.o -c /home/jayz/Desktop/C++Interpreter/src/Stmt/PrintStmt.cpp",
+  "file": "/home/jayz/Desktop/C++Interpreter/src/Stmt/PrintStmt.cpp",
+  "output": "CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.o"
 }
 ]
