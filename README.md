@@ -35,6 +35,6 @@ Usage
 Run a simple example:
 
 ```sh
-lox examples/test.lox
+lox "file"
 ```
 
