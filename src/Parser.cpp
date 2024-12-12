@@ -39,7 +39,6 @@ std::unique_ptr<Stmt> Parser::statement()
     //             | block;
  
     if (match(TokenType::PRINT)) {
-        std::cout << "here" << std::endl;
 
         return printStatement();
     }

@@ -14,10 +14,10 @@
 
 
 void run(std::string& contents){
+    
     Scanner scanner(contents);
     //std::vector<Token> toks = scanner.scanTokens();
     Parser parser{scanner.scanTokens()};
-        std::cout << "here" << std::endl;
 
     const auto statements = parser.parse();
     Interpreter I(std::cout);
@@ -27,12 +27,13 @@ void run(std::string& contents){
 }
 
 
-void readFile(std::string& contents, std::string arg){
+void readFile(std::string arg){
+    std::string content;
     std::fstream input(arg, std::ios::in);
     std::stringstream strm;
     strm << input.rdbuf();
-    contents = strm.str();
-    run(contents);
+    content = strm.str();
+    run(content);
 }
 
 void runPrompt(){
@@ -51,19 +52,14 @@ void runPrompt(){
 }
 
 int main(int argc, char* argv[]){
-    /*
+
     if (argc > 2) {
-        fmt::print("usage: lox [script]\n");
+        std::cout << "usage: lox [script]\n";
         exit(1);
-    } else if (args == 2) {
-        runFile(argv[1]);
+    } else if (argc == 2) {
+        readFile(argv[1]);
     } else {
         runPrompt();
     }
-    */
-
-    std::string contents;
-    //runPrompt();
-    readFile(contents, "../input.test");
-    //readFile(contents, argv[1]);
+    
 }
