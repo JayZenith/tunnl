@@ -6,8 +6,6 @@
 #include <vector>
 
 #include "Token.h"
-//#include "TokenType.h"
-
 
 class Scanner {
 public:

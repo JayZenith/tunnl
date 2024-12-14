@@ -67,9 +67,7 @@ std::string stringify(const std::any& object)
 
 Interpreter::Interpreter(std::ostream& out) 
     : out(out)
-{
-    
-}
+{  }
 
 Interpreter::~Interpreter() = default;
 
@@ -78,7 +76,7 @@ void Interpreter::intepret(const std::vector<std::unique_ptr<Stmt>>& statements)
    // try {
         for (const auto& ptr : statements) {
             assert(ptr != nullptr);
-            execute(*ptr);
+            execute(*ptr); //due to being pointers 
         }
     // } catch (RuntimeError error) {
     //     Lox::ReportRuntimeError(error);
@@ -93,9 +91,14 @@ void Interpreter::intepret(const std::vector<std::unique_ptr<Stmt>>& statements)
 
 void Interpreter::execute(const Stmt& stmt)
 {
+    //PrintStmt is derived from Stmt
+    //PrintStmt has an accept function passing
+    //in the StmtVisitor an the type of visitor 
     stmt.accept(*this);
 }
 
+
+//MAKE SURE NOT NULL BY CALLING PrintStmt.cpo
 std::any Interpreter::evaluate(const Expr& expr)
 {
     return expr.accept(*this);
@@ -110,10 +113,13 @@ std::any Interpreter::visitLiteralExpr(const LiteralExpr& expr)
 }
 
 
+//ith EXECUTE we get here 
 std::any Interpreter::visitPrintStmt(const PrintStmt& stmt)
 {
+    //evaluate makes sure not NULL
     auto value = evaluate(stmt.getExpr());
     //fmt::print(out, "{}\n", stringify(value));
+    //we know what to do here 
     std::cout << stringify(value) << std::endl;
     return {};
 }

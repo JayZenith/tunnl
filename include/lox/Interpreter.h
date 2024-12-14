@@ -10,14 +10,12 @@
 
 #include "Token.h"
 
-
 class Expr;
 class Stmt;
 
-
-
+//deriving from Expr and Stmt Visitors 
+//Derived class must override virtual classes in base class
 class Interpreter : public ExprVisitor<std::any>, public StmtVisitor<std::any> {
-public:
 public:
     Interpreter(std::ostream& out);
     ~Interpreter(); // for forward declaration of Environment

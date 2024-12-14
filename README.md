@@ -18,14 +18,14 @@ Building
 Just run CMake like this:
 
 ```sh
-# in build dir
-cmake <src-dir>
+# in root dir
+cmake <build-dir>
 ```
 
 and then
 
 ```sh
-cmake --build . --target lox
+cmake --build ./build --target lox
 ```
 
 
@@ -35,6 +35,7 @@ Usage
 Run a simple example:
 
 ```sh
-lox "file"
+# in build dir
+lox <program>
 ```
 

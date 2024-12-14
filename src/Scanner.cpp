@@ -6,7 +6,6 @@
 
 Scanner::Scanner(const std::string& source) : source(std::move(source))
 {
-    /* clang-format off */
     keywords = {
         {"and", TokenType::AND},
         {"class", TokenType::CLASS},
@@ -25,7 +24,6 @@ Scanner::Scanner(const std::string& source) : source(std::move(source))
         {"var", TokenType::VAR},
         {"while", TokenType::WHILE},
     };
-    /* clang-format on */
 }
 
 std::vector<Token> Scanner::scanTokens()

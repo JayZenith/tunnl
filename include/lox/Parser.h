@@ -60,9 +60,18 @@ private:
     int current{0};
 };
 
+//match(TokenType::?, TokenType::?)
+//will pass such args, to check for what it holds 
 template<typename... Args>
 bool Parser::match(Args... args){
+    
+    //I assume we can pass multiple args here and with
+    //initialier_list we store an array of checks of type
+    //boolean 
     std::initializer_list<bool>results{check(args)...};
+    //if we get one true, advance moves cursor forward
+    //while returning this curent token unless at end
+    //just returns current without advancing 
     for(auto r : results){
         if(r){
             advance();

@@ -1,8 +1,7 @@
 #include "../include/lox/Parser.h"
-
 #include "../include/lox/Stmt/PrintStmt.h"
-
 #include "../include/lox/Lox.h"
+
 
 #include "../include/lox/Expr/VarExpr.h"
 #include "../include/lox/Expr/LiteralExpr.h"
@@ -17,7 +16,10 @@ std::vector<std::unique_ptr<Stmt>> Parser::parse()
 {
     // program → declaration* EOF ;
     std::vector<std::unique_ptr<Stmt>> statements;
-    while (!isAtEnd()) {
+    while (!isAtEnd()) { //true if at TokenEOF
+        //wILL LOOP through all the tokens an 
+        //return an array of statements
+        //with the eexpressions 
         statements.push_back(declaration());
     }
     return statements;
@@ -38,6 +40,7 @@ std::unique_ptr<Stmt> Parser::statement()
     //             | whileStmt
     //             | block;
  
+    //match defined in Header 
     if (match(TokenType::PRINT)) {
 
         return printStatement();
@@ -51,6 +54,8 @@ std::unique_ptr<Stmt> Parser::statement()
 std::unique_ptr<Stmt> Parser::printStatement()
 {
     // printStmt → "print" expression ";" ;
+    //auto assumes type at compile time since 
+    //we are not sure what expression is returned 
     auto value = expression();
     consume(TokenType::SEMICOLON, "Expect ';' after value");
     return std::make_unique<PrintStmt>(std::move(value));
@@ -88,6 +93,7 @@ std::unique_ptr<Expr> Parser::primary()
     // primary        → NUMBER | STRING | "false" | "true" | "nil"
     //                  IDENTIFIER | "(" expression ")" ;
     if (match(TokenType::NUMBER, TokenType::STRING)) {
+        //return current token with its adrress of the literal 
         return std::make_unique<LiteralExpr>(previous().getLiteral());
     }
 
@@ -132,7 +138,12 @@ Token Parser::consume(TokenType type, const char* message)
     if (check(type)) {
         return advance();
     }
-
+    //ELSE THROW ERROR PASSE AS ARG
     //throw error(peek(), message);
+    if(message){
+        std::cerr << message <<std::endl;
+        exit(EXIT_FAILURE);
+
+    }
     return tokens.at(current - 1); //IDK
 }

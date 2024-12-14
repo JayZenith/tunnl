@@ -7,6 +7,7 @@
 
 class Stmt {
 public:
+    //can redefeine for polymorphism
     virtual ~Stmt() = default;
 
     // TODO: figure out a way to accept template visitors? (complicated!)

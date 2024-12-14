@@ -12,20 +12,16 @@
 #include "../include/lox/Parser.h"
 
 
-
 void run(std::string& contents){
-    
     Scanner scanner(contents);
-    //std::vector<Token> toks = scanner.scanTokens();
     Parser parser{scanner.scanTokens()};
-
+    
     const auto statements = parser.parse();
     Interpreter I(std::cout);
     I.intepret(statements);
     //std::cout << "hi";   
     
 }
-
 
 void readFile(std::string arg){
     std::string content;

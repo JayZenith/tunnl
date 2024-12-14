@@ -14,6 +14,8 @@ class StmtVisitor {
 public:
     ~StmtVisitor() = default;
 
+    //R is any an dhen calling StmtVisitor by constructor,
+    //we pass in the specific type 
     // virtual R visitBlockStmt(const BlockStmt& stmt) = 0;
     // virtual R visitExpressionStmt(const ExpressionStmt& stmt) = 0;
     // virtual R visitIfStmt(const IfStmt& stmt) = 0;
