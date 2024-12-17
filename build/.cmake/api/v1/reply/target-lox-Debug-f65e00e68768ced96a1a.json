@@ -55,9 +55,7 @@
 				3,
 				4,
 				5,
-				6,
-				7,
-				8
+				6
 			]
 		}
 	],
@@ -100,9 +98,7 @@
 				3,
 				4,
 				5,
-				6,
-				7,
-				8
+				6
 			]
 		}
 	],
@@ -141,19 +137,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/Lox.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
 			"path" : "src/Expr/LiteralExpr.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/Expr/VarExpr.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

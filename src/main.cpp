@@ -5,8 +5,6 @@
 #include <vector>
 #include <optional>
 
-//#include "./tokenize.hpp"
-//#include "../include/lox/Token.h"
 #include "../include/lox/Interpreter.h"
 #include "../include/lox/Scanner.h"
 #include "../include/lox/Parser.h"
@@ -15,11 +13,9 @@
 void run(std::string& contents){
     Scanner scanner(contents);
     Parser parser{scanner.scanTokens()};
-    
     const auto statements = parser.parse();
     Interpreter I(std::cout);
     I.intepret(statements);
-    //std::cout << "hi";   
     
 }
 

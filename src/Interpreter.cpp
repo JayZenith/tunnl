@@ -1,12 +1,11 @@
 #include "../include/lox/Interpreter.h"
 
 
-#include "../include/lox/Lox.h"
-
+// #include "../include/lox/Lox.h"
+#include "../include/lox/Token.h"
 
 
 #include "../include/lox/Expr/LiteralExpr.h"
-#include "../include/lox/Expr/VarExpr.h"
 
 
 #include "../include/lox/Stmt/PrintStmt.h"
@@ -28,7 +27,8 @@ std::string stringify(const std::any& object)
     }
 
     if (object.type() == typeid(bool)) {
-        return std::any_cast<bool>(object) ? "true" : "false";
+        //return std::any_cast<bool>(object) ? "IM-TRUE" : "IM-FALSE";
+        return std::any_cast<bool>(object) ? "1" : "0";
     }
 
     if (object.type() == typeid(double)) {
@@ -49,18 +49,6 @@ std::string stringify(const std::any& object)
 } // end of anonymous namespace
 
 
-// returns Unix time in seconds
-// std::any clock(Interpreter&, const std::vector<std::any>&)
-// {
-//     std::time_t t = std::time(nullptr);
-//     return static_cast<double>(t);
-// }
-
-// Interpreter::Interpreter(std::ostream& out) : out(out) , globals(std::make_unique<Environment>()), globalEnvironment(globals.get())
-// {
-//     // globals->define("clock", Callable{0, &clock});
-//     // environment = std::move(globals);
-// }
 
 
 
@@ -76,6 +64,7 @@ void Interpreter::intepret(const std::vector<std::unique_ptr<Stmt>>& statements)
    // try {
         for (const auto& ptr : statements) {
             assert(ptr != nullptr);
+
             execute(*ptr); //due to being pointers 
         }
     // } catch (RuntimeError error) {
@@ -83,11 +72,7 @@ void Interpreter::intepret(const std::vector<std::unique_ptr<Stmt>>& statements)
     // }
 }
 
-// Environment& Interpreter::getGlobalsEnvironment()
-// {
-//     assert(globalEnvironment);
-//     return *globalEnvironment;
-// }
+
 
 void Interpreter::execute(const Stmt& stmt)
 {
@@ -101,6 +86,7 @@ void Interpreter::execute(const Stmt& stmt)
 //MAKE SURE NOT NULL BY CALLING PrintStmt.cpo
 std::any Interpreter::evaluate(const Expr& expr)
 {
+
     return expr.accept(*this);
 }
 
@@ -109,16 +95,16 @@ std::any Interpreter::evaluate(const Expr& expr)
 
 std::any Interpreter::visitLiteralExpr(const LiteralExpr& expr)
 {
+    
     return expr.getLiteral();
 }
 
 
-//ith EXECUTE we get here 
+//with EXECUTE we get here 
 std::any Interpreter::visitPrintStmt(const PrintStmt& stmt)
 {
     //evaluate makes sure not NULL
     auto value = evaluate(stmt.getExpr());
-    //fmt::print(out, "{}\n", stringify(value));
     //we know what to do here 
     std::cout << stringify(value) << std::endl;
     return {};
@@ -126,21 +112,4 @@ std::any Interpreter::visitPrintStmt(const PrintStmt& stmt)
 
 
 
-
-
-// This simulates "finally" keyword usage in executeBlock of Java version
-// "execute" can throw "ReturnException" and we need to unwind the stack
-// and return to previous enviroment on each scope exit
-// Interpreter::EnterEnviromentGuard::EnterEnviromentGuard(Interpreter& i,
-//                                                         std::unique_ptr<Environment> env) :
-//     i(i)
-// {
-//     previous = std::move(i.environment);
-//     i.environment = std::move(env);
-// }
-
-// Interpreter::EnterEnviromentGuard::~EnterEnviromentGuard()
-// {
-//     i.environment = std::move(previous);
-// }
 

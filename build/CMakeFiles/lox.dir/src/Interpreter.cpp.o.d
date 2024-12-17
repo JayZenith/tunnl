@@ -160,10 +160,8 @@ CMakeFiles/lox.dir/src/Interpreter.cpp.o: \
  /usr/include/c++/13/bits/charconv.h \
  /usr/include/c++/13/bits/basic_string.tcc \
  /home/jayz/Desktop/C++Interpreter/src/../include/lox/TokenType.h \
- /home/jayz/Desktop/C++Interpreter/src/../include/lox/Lox.h \
  /home/jayz/Desktop/C++Interpreter/src/../include/lox/Expr/LiteralExpr.h \
  /home/jayz/Desktop/C++Interpreter/src/../include/lox/Expr/Expr.h \
- /home/jayz/Desktop/C++Interpreter/src/../include/lox/Expr/VarExpr.h \
  /home/jayz/Desktop/C++Interpreter/src/../include/lox/Stmt/PrintStmt.h \
  /home/jayz/Desktop/C++Interpreter/src/../include/lox/Stmt/Stmt.h \
  /usr/include/c++/13/cassert /usr/include/assert.h \

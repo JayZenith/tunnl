@@ -31,21 +31,9 @@
 },
 {
   "directory": "/home/jayz/Desktop/C++Interpreter/build",
-  "command": "/usr/bin/c++   -g -std=gnu++17 -o CMakeFiles/lox.dir/src/Lox.cpp.o -c /home/jayz/Desktop/C++Interpreter/src/Lox.cpp",
-  "file": "/home/jayz/Desktop/C++Interpreter/src/Lox.cpp",
-  "output": "CMakeFiles/lox.dir/src/Lox.cpp.o"
-},
-{
-  "directory": "/home/jayz/Desktop/C++Interpreter/build",
   "command": "/usr/bin/c++   -g -std=gnu++17 -o CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.o -c /home/jayz/Desktop/C++Interpreter/src/Expr/LiteralExpr.cpp",
   "file": "/home/jayz/Desktop/C++Interpreter/src/Expr/LiteralExpr.cpp",
   "output": "CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.o"
-},
-{
-  "directory": "/home/jayz/Desktop/C++Interpreter/build",
-  "command": "/usr/bin/c++   -g -std=gnu++17 -o CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.o -c /home/jayz/Desktop/C++Interpreter/src/Expr/VarExpr.cpp",
-  "file": "/home/jayz/Desktop/C++Interpreter/src/Expr/VarExpr.cpp",
-  "output": "CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.o"
 },
 {
   "directory": "/home/jayz/Desktop/C++Interpreter/build",

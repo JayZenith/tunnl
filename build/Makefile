@@ -153,30 +153,6 @@ src/Expr/LiteralExpr.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.s
 .PHONY : src/Expr/LiteralExpr.cpp.s
 
-src/Expr/VarExpr.o: src/Expr/VarExpr.cpp.o
-.PHONY : src/Expr/VarExpr.o
-
-# target to build an object file
-src/Expr/VarExpr.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.o
-.PHONY : src/Expr/VarExpr.cpp.o
-
-src/Expr/VarExpr.i: src/Expr/VarExpr.cpp.i
-.PHONY : src/Expr/VarExpr.i
-
-# target to preprocess a source file
-src/Expr/VarExpr.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.i
-.PHONY : src/Expr/VarExpr.cpp.i
-
-src/Expr/VarExpr.s: src/Expr/VarExpr.cpp.s
-.PHONY : src/Expr/VarExpr.s
-
-# target to generate assembly for a file
-src/Expr/VarExpr.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.s
-.PHONY : src/Expr/VarExpr.cpp.s
-
 src/Interpreter.o: src/Interpreter.cpp.o
 .PHONY : src/Interpreter.o
 
@@ -200,30 +176,6 @@ src/Interpreter.s: src/Interpreter.cpp.s
 src/Interpreter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Interpreter.cpp.s
 .PHONY : src/Interpreter.cpp.s
-
-src/Lox.o: src/Lox.cpp.o
-.PHONY : src/Lox.o
-
-# target to build an object file
-src/Lox.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Lox.cpp.o
-.PHONY : src/Lox.cpp.o
-
-src/Lox.i: src/Lox.cpp.i
-.PHONY : src/Lox.i
-
-# target to preprocess a source file
-src/Lox.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Lox.cpp.i
-.PHONY : src/Lox.cpp.i
-
-src/Lox.s: src/Lox.cpp.s
-.PHONY : src/Lox.s
-
-# target to generate assembly for a file
-src/Lox.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Lox.cpp.s
-.PHONY : src/Lox.cpp.s
 
 src/Parser.o: src/Parser.cpp.o
 .PHONY : src/Parser.o
@@ -357,15 +309,9 @@ help:
 	@echo "... src/Expr/LiteralExpr.o"
 	@echo "... src/Expr/LiteralExpr.i"
 	@echo "... src/Expr/LiteralExpr.s"
-	@echo "... src/Expr/VarExpr.o"
-	@echo "... src/Expr/VarExpr.i"
-	@echo "... src/Expr/VarExpr.s"
 	@echo "... src/Interpreter.o"
 	@echo "... src/Interpreter.i"
 	@echo "... src/Interpreter.s"
-	@echo "... src/Lox.o"
-	@echo "... src/Lox.i"
-	@echo "... src/Lox.s"
 	@echo "... src/Parser.o"
 	@echo "... src/Parser.i"
 	@echo "... src/Parser.s"

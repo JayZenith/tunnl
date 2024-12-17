@@ -9,9 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/jayz/Desktop/C++Interpreter/src/Expr/LiteralExpr.cpp" "CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.o" "gcc" "CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.o.d"
-  "/home/jayz/Desktop/C++Interpreter/src/Expr/VarExpr.cpp" "CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.o" "gcc" "CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.o.d"
   "/home/jayz/Desktop/C++Interpreter/src/Interpreter.cpp" "CMakeFiles/lox.dir/src/Interpreter.cpp.o" "gcc" "CMakeFiles/lox.dir/src/Interpreter.cpp.o.d"
-  "/home/jayz/Desktop/C++Interpreter/src/Lox.cpp" "CMakeFiles/lox.dir/src/Lox.cpp.o" "gcc" "CMakeFiles/lox.dir/src/Lox.cpp.o.d"
   "/home/jayz/Desktop/C++Interpreter/src/Parser.cpp" "CMakeFiles/lox.dir/src/Parser.cpp.o" "gcc" "CMakeFiles/lox.dir/src/Parser.cpp.o.d"
   "/home/jayz/Desktop/C++Interpreter/src/Scanner.cpp" "CMakeFiles/lox.dir/src/Scanner.cpp.o" "gcc" "CMakeFiles/lox.dir/src/Scanner.cpp.o.d"
   "/home/jayz/Desktop/C++Interpreter/src/Stmt/PrintStmt.cpp" "CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.o" "gcc" "CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.o.d"

@@ -1,9 +1,8 @@
 #include "../include/lox/Parser.h"
 #include "../include/lox/Stmt/PrintStmt.h"
-#include "../include/lox/Lox.h"
+#include "../include/lox/Token.h"
 
 
-#include "../include/lox/Expr/VarExpr.h"
 #include "../include/lox/Expr/LiteralExpr.h"
 #include <iostream>
 
@@ -79,7 +78,7 @@ std::unique_ptr<Expr> Parser::call()
     // call → primary ( "(" arguments? ")" )* ;
     auto expr = primary();
     // while (true) {
-    //     if (match(TokenType::LEFT_PAREN)) {
+    //     if (match(TokenType::LEFTegg nog_PAREN)) {
     //         expr = finishCall(std::move(expr));
     //     } else {
     //         break;
@@ -95,6 +94,14 @@ std::unique_ptr<Expr> Parser::primary()
     if (match(TokenType::NUMBER, TokenType::STRING)) {
         //return current token with its adrress of the literal 
         return std::make_unique<LiteralExpr>(previous().getLiteral());
+    }
+
+    if (match(TokenType::TRUE)) {
+        return std::make_unique<LiteralExpr>(true);
+    }
+
+    if (match(TokenType::FALSE)) {
+        return std::make_unique<LiteralExpr>(false);
     }
 
     return NULL;
