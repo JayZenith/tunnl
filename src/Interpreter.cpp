@@ -53,8 +53,7 @@ std::string stringify(const std::any& object)
 
 
 
-Interpreter::Interpreter(std::ostream& out) 
-    : out(out)
+Interpreter::Interpreter() 
 {  }
 
 Interpreter::~Interpreter() = default;

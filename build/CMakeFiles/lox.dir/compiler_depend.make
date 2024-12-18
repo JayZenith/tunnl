@@ -284,7 +284,6 @@ CMakeFiles/lox.dir/src/Parser.cpp.o: /home/jayz/Desktop/C++Interpreter/src/Parse
   /home/jayz/Desktop/C++Interpreter/include/lox/Stmt/StmtVisitor.h \
   /home/jayz/Desktop/C++Interpreter/include/lox/Stmt/Stmt.h \
   /home/jayz/Desktop/C++Interpreter/include/lox/Expr/LiteralExpr.h \
-  /home/jayz/Desktop/C++Interpreter/include/lox/Expr/VarExpr.h \
   /home/jayz/Desktop/C++Interpreter/include/lox/Parser.h \
   /home/jayz/Desktop/C++Interpreter/include/lox/Stmt/PrintStmt.h \
   /home/jayz/Desktop/C++Interpreter/include/lox/Token.h \
@@ -1245,7 +1244,6 @@ lox: /lib/x86_64-linux-gnu/libc.so.6 \
   /usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.so \
   /usr/lib/x86_64-linux-gnu/libc_nonshared.a \
   CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.o \
-  CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.o \
   CMakeFiles/lox.dir/src/Interpreter.cpp.o \
   CMakeFiles/lox.dir/src/Parser.cpp.o \
   CMakeFiles/lox.dir/src/Scanner.cpp.o \
@@ -1263,8 +1261,6 @@ CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.o:
 CMakeFiles/lox.dir/src/Scanner.cpp.o:
 
 CMakeFiles/lox.dir/src/Interpreter.cpp.o:
-
-CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.o:
 
 CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.o:
 
@@ -1383,10 +1379,6 @@ CMakeFiles/lox.dir/src/Parser.cpp.o:
 /usr/include/c++/13/bits/stl_raw_storage_iter.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
-
-/usr/include/c++/13/bits/hashtable.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
 /usr/include/c++/13/bits/functexcept.h:
 
@@ -1547,8 +1539,6 @@ CMakeFiles/lox.dir/src/Parser.cpp.o:
 /usr/include/c++/13/string:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/home/jayz/Desktop/C++Interpreter/include/lox/Expr/VarExpr.h:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
@@ -1847,3 +1837,7 @@ CMakeFiles/lox.dir/src/Parser.cpp.o:
 /home/jayz/Desktop/C++Interpreter/include/lox/Scanner.h:
 
 /usr/include/c++/13/bits/enable_special_members.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+
+/usr/include/c++/13/bits/hashtable.h:

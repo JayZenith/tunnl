@@ -17,7 +17,7 @@ class Stmt;
 //Derived class must override virtual classes in base class
 class Interpreter : public ExprVisitor<std::any>, public StmtVisitor<std::any> {
 public:
-    Interpreter(std::ostream& out);
+    Interpreter(/*std::ostream& out*/);
     ~Interpreter(); // for forward declaration of Environment
     void intepret(const std::vector<std::unique_ptr<Stmt>>& statements);
 
@@ -51,6 +51,5 @@ private:
     //     std::unique_ptr<Environment> previous;
     // };
 
-    std::ostream& out;
 };
 
