@@ -54,7 +54,7 @@ std::string stringify(const std::any& object)
 
 
 Interpreter::Interpreter() 
-{  }
+{ }
 
 Interpreter::~Interpreter() = default;
 
