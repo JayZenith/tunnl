@@ -1,7 +1,7 @@
-CMakeFiles/lox.dir/src/Parser.cpp.o: \
- /home/jayz/Desktop/C++Interpreter/src/Parser.cpp \
+CMakeFiles/lox.dir/src/Expr/BinaryExpr.cpp.o: \
+ /home/jayz/Desktop/C++Interpreter/src/Expr/BinaryExpr.cpp \
  /usr/include/stdc-predef.h \
- /home/jayz/Desktop/C++Interpreter/src/../include/lox/Parser.h \
+ /home/jayz/Desktop/C++Interpreter/src/Expr/../../include/lox/Expr/BinaryExpr.h \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/memoryfwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -115,7 +115,11 @@ CMakeFiles/lox.dir/src/Parser.cpp.o: \
  /usr/include/c++/13/bits/atomic_lockfree_defines.h \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
- /usr/include/c++/13/pstl/execution_defs.h /usr/include/c++/13/stdexcept \
+ /usr/include/c++/13/pstl/execution_defs.h \
+ /home/jayz/Desktop/C++Interpreter/src/Expr/../../include/lox/Expr/Expr.h \
+ /home/jayz/Desktop/C++Interpreter/src/Expr/../../include/lox/Expr/../Expr/ExprVisitor.h \
+ /usr/include/c++/13/any /usr/include/c++/13/initializer_list \
+ /home/jayz/Desktop/C++Interpreter/src/Expr/../../include/lox/Expr/../Token.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/char_traits.h \
  /usr/include/c++/13/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \
@@ -124,7 +128,6 @@ CMakeFiles/lox.dir/src/Parser.cpp.o: \
  /usr/include/ctype.h /usr/include/c++/13/bits/ostream_insert.h \
  /usr/include/c++/13/bits/cxxabi_forced.h \
  /usr/include/c++/13/bits/range_access.h \
- /usr/include/c++/13/initializer_list \
  /usr/include/c++/13/bits/basic_string.h /usr/include/c++/13/string_view \
  /usr/include/c++/13/bits/string_view.tcc \
  /usr/include/c++/13/ext/string_conversions.h /usr/include/c++/13/cstdlib \
@@ -152,33 +155,5 @@ CMakeFiles/lox.dir/src/Parser.cpp.o: \
  /usr/include/c++/13/bits/basic_string.tcc \
  /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
  /usr/include/c++/13/bits/uses_allocator_args.h \
- /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_vector.h \
- /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc \
- /home/jayz/Desktop/C++Interpreter/src/../include/lox/./Expr/Expr.h \
- /home/jayz/Desktop/C++Interpreter/src/../include/lox/./Expr/../Expr/ExprVisitor.h \
- /usr/include/c++/13/any \
- /home/jayz/Desktop/C++Interpreter/src/../include/lox/./Stmt/Stmt.h \
- /home/jayz/Desktop/C++Interpreter/src/../include/lox/./Stmt/../Stmt/StmtVisitor.h \
- /home/jayz/Desktop/C++Interpreter/src/../include/lox/Token.h \
- /home/jayz/Desktop/C++Interpreter/src/../include/lox/TokenType.h \
- /home/jayz/Desktop/C++Interpreter/src/../include/lox/Stmt/PrintStmt.h \
- /home/jayz/Desktop/C++Interpreter/src/../include/lox/Expr/LiteralExpr.h \
- /home/jayz/Desktop/C++Interpreter/src/../include/lox/Expr/BinaryExpr.h \
- /usr/include/c++/13/iostream /usr/include/c++/13/ostream \
- /usr/include/c++/13/ios /usr/include/c++/13/bits/ios_base.h \
- /usr/include/c++/13/bits/locale_classes.h \
- /usr/include/c++/13/bits/locale_classes.tcc \
- /usr/include/c++/13/system_error \
- /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
- /usr/include/c++/13/streambuf /usr/include/c++/13/bits/streambuf.tcc \
- /usr/include/c++/13/bits/basic_ios.h \
- /usr/include/c++/13/bits/locale_facets.h /usr/include/c++/13/cwctype \
- /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
- /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h \
- /usr/include/c++/13/bits/streambuf_iterator.h \
- /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h \
- /usr/include/c++/13/bits/locale_facets.tcc \
- /usr/include/c++/13/bits/basic_ios.tcc \
- /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc
+ /home/jayz/Desktop/C++Interpreter/src/Expr/../../include/lox/Expr/../TokenType.h \
+ /usr/include/c++/13/cassert /usr/include/assert.h

@@ -6,6 +6,8 @@
 
 
 #include "../include/lox/Expr/LiteralExpr.h"
+#include "../include/lox/Expr/BinaryExpr.h"
+
 
 
 #include "../include/lox/Stmt/PrintStmt.h"
@@ -90,6 +92,22 @@ std::any Interpreter::evaluate(const Expr& expr)
 }
 
 
+std::any Interpreter::visitBinaryExpr(const BinaryExpr& expr){
+    //obtain left and right values
+    const auto left = evaluate(expr.getLeftExpr());
+    const auto right = evaluate(expr.getRightExpr());
+
+    switch (expr.getOp().getType()){
+        case TokenType::PLUS:
+            if (left.type() == typeid(double) && right.type() == typeid(double)) {
+                return std::any_cast<double>(left) + std::any_cast<double>(right);
+            }
+
+            if (left.type() == typeid(std::string) && right.type() == typeid(std::string)) {
+                return std::any_cast<std::string>(left) + std::any_cast<std::string>(right);
+            }
+    }
+}
 
 
 std::any Interpreter::visitLiteralExpr(const LiteralExpr& expr)

@@ -162,6 +162,7 @@ CMakeFiles/lox.dir/src/Interpreter.cpp.o: \
  /home/jayz/Desktop/C++Interpreter/src/../include/lox/TokenType.h \
  /home/jayz/Desktop/C++Interpreter/src/../include/lox/Expr/LiteralExpr.h \
  /home/jayz/Desktop/C++Interpreter/src/../include/lox/Expr/Expr.h \
+ /home/jayz/Desktop/C++Interpreter/src/../include/lox/Expr/BinaryExpr.h \
  /home/jayz/Desktop/C++Interpreter/src/../include/lox/Stmt/PrintStmt.h \
  /home/jayz/Desktop/C++Interpreter/src/../include/lox/Stmt/Stmt.h \
  /usr/include/c++/13/cassert /usr/include/assert.h \

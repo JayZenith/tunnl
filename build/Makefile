@@ -129,6 +129,30 @@ lox/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/build
 .PHONY : lox/fast
 
+src/Expr/BinaryExpr.o: src/Expr/BinaryExpr.cpp.o
+.PHONY : src/Expr/BinaryExpr.o
+
+# target to build an object file
+src/Expr/BinaryExpr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Expr/BinaryExpr.cpp.o
+.PHONY : src/Expr/BinaryExpr.cpp.o
+
+src/Expr/BinaryExpr.i: src/Expr/BinaryExpr.cpp.i
+.PHONY : src/Expr/BinaryExpr.i
+
+# target to preprocess a source file
+src/Expr/BinaryExpr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Expr/BinaryExpr.cpp.i
+.PHONY : src/Expr/BinaryExpr.cpp.i
+
+src/Expr/BinaryExpr.s: src/Expr/BinaryExpr.cpp.s
+.PHONY : src/Expr/BinaryExpr.s
+
+# target to generate assembly for a file
+src/Expr/BinaryExpr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Expr/BinaryExpr.cpp.s
+.PHONY : src/Expr/BinaryExpr.cpp.s
+
 src/Expr/LiteralExpr.o: src/Expr/LiteralExpr.cpp.o
 .PHONY : src/Expr/LiteralExpr.o
 
@@ -306,6 +330,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... lox"
+	@echo "... src/Expr/BinaryExpr.o"
+	@echo "... src/Expr/BinaryExpr.i"
+	@echo "... src/Expr/BinaryExpr.s"
 	@echo "... src/Expr/LiteralExpr.o"
 	@echo "... src/Expr/LiteralExpr.i"
 	@echo "... src/Expr/LiteralExpr.s"

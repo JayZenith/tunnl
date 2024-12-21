@@ -1,9 +1,8 @@
 #include "../include/lox/Parser.h"
 #include "../include/lox/Stmt/PrintStmt.h"
 #include "../include/lox/Token.h"
-
-
 #include "../include/lox/Expr/LiteralExpr.h"
+#include "../include/lox/Expr/BinaryExpr.h"
 #include <iostream>
 
 #include <memory>
@@ -16,11 +15,9 @@ std::vector<std::unique_ptr<Stmt>> Parser::parse()
     // program → declaration* EOF ;
     std::vector<std::unique_ptr<Stmt>> statements;
     while (!isAtEnd()) { //true if at TokenEOF
-        //wILL LOOP through all the tokens an 
-        //return an array of statements
-        //with the eexpressions 
         statements.push_back(declaration());
     }
+
     return statements;
 }
 
@@ -45,9 +42,8 @@ std::unique_ptr<Stmt> Parser::statement()
         return printStatement();
     }
 
-    return NULL; //shouldnt reach here
+    return expressionStatement(); 
 
-    //return expressionStatement();
 }
 
 std::unique_ptr<Stmt> Parser::printStatement()
@@ -60,6 +56,12 @@ std::unique_ptr<Stmt> Parser::printStatement()
     return std::make_unique<PrintStmt>(std::move(value));
 }
 
+std::unique_ptr<Stmt> Parser::expressionStatement(){
+    //expressionStmt -> expression ";" ;
+    auto expr = expression();
+    return NULL;
+}
+
 std::unique_ptr<Expr> Parser::expression()
 {
     // expression → assignment ;
@@ -69,8 +71,66 @@ std::unique_ptr<Expr> Parser::expression()
 std::unique_ptr<Expr> Parser::assignment()
 {
     // assignment → IDENTIFIER "=" assignment | logic_or ;
-    auto expr = call();
+    auto expr = orExpression();
+
+    //auto expr = call();
     return expr;
+}
+
+std::unique_ptr<Expr> Parser::orExpression(){
+    auto expr = andExpression();
+
+    return expr;
+}
+
+std::unique_ptr<Expr> Parser::andExpression(){
+    // logic_and  → equality ( "and" equality )* ;
+    auto expr = equality();
+
+    return expr;
+}
+
+
+
+std::unique_ptr<Expr> Parser::equality(){
+    // equality → comparison ( ( "!=" | "==" ) comparison )* ;
+    auto expr = comparison();
+
+    return expr;
+}
+
+std::unique_ptr<Expr> Parser::comparison(){
+    // comparison → addition ( ( ">" | ">=" | "<" | "<=" ) addition )* ;
+    auto expr = addition();
+
+    return expr;
+}
+
+
+std::unique_ptr<Expr> Parser::addition(){
+    // addition → multiplication ( ( "-" | "+" ) multiplication )* ;
+    auto expr = multiplication();
+    //Should come back here after returning from arg1
+    while (match(TokenType::MINUS, TokenType::PLUS)) {
+        auto op = previous();
+        auto right = multiplication();
+        expr = std::make_unique<BinaryExpr>(std::move(expr), op, std::move(right));
+    }
+
+    return expr;
+}
+
+std::unique_ptr<Expr> Parser::multiplication(){
+    // multiplication → unary ( ( "/" | "*" ) unary )* ;
+    auto expr = unary();
+
+    return expr;
+}
+
+
+std::unique_ptr<Expr> Parser::unary(){
+
+    return call();
 }
 
 std::unique_ptr<Expr> Parser::call()

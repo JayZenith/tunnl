@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/lox.dir/link.d"
+  "CMakeFiles/lox.dir/src/Expr/BinaryExpr.cpp.o"
+  "CMakeFiles/lox.dir/src/Expr/BinaryExpr.cpp.o.d"
   "CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.o"
   "CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.o.d"
   "CMakeFiles/lox.dir/src/Interpreter.cpp.o"

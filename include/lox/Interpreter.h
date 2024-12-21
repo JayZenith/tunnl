@@ -29,11 +29,8 @@ public:
     std::any evaluate(const Expr& expr);
 
 private:
-    
-    
+    std::any visitBinaryExpr(const BinaryExpr& expr) override;
     std::any visitLiteralExpr(const LiteralExpr& expr) override;
-   
-
     std::any visitPrintStmt(const PrintStmt& stmt) override;
 
     // data

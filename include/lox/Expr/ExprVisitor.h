@@ -1,13 +1,13 @@
 #pragma once
 
 // class AssignExpr;
-// class BinaryExpr;
+class BinaryExpr;
 // class CallExpr;
 // class GroupingExpr;
 // class LogicalExpr;
- class LiteralExpr;
- //class UnaryExpr;
-class VarExpr;
+class LiteralExpr;
+// class UnaryExpr;
+// class VarExpr;
 
 
 
@@ -17,7 +17,7 @@ public:
     ~ExprVisitor() = default;
 
     // virtual R visitAssignExpr(const AssignExpr& expr) = 0;
-    // virtual R visitBinaryExpr(const BinaryExpr& expr) = 0;
+     virtual R visitBinaryExpr(const BinaryExpr& expr) = 0;
     // virtual R visitCallExpr(const CallExpr& expr) = 0;
     // virtual R visitGroupingExpr(const GroupingExpr& expr) = 0;
     // virtual R visitLogicalExpr(const LogicalExpr& expr) = 0;
