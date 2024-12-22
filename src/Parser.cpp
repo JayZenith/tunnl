@@ -124,7 +124,13 @@ std::unique_ptr<Expr> Parser::equality(){
 
 std::unique_ptr<Expr> Parser::comparison(){
     // comparison → addition ( ( ">" | ">=" | "<" | "<=" ) addition )* ;
-    auto expr = addition();
+    auto expr = addition(); //gets value from Call()
+    while (
+        match(TokenType::GREATER, TokenType::GREATER_EQUAL, TokenType::LESS, TokenType::LESS_EQUAL)) {
+        auto op = previous();
+        auto right = addition();
+        expr = std::make_unique<BinaryExpr>(std::move(expr), op, std::move(right));
+    }
 
     return expr;
 }

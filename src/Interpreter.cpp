@@ -35,7 +35,7 @@ std::string stringify(const std::any& object)
 
     if (object.type() == typeid(bool)) {
         //return std::any_cast<bool>(object) ? "IM-TRUE" : "IM-FALSE";
-        return std::any_cast<bool>(object) ? "1" : "0";
+        return std::any_cast<bool>(object) ? "True" : "False";
     }
 
     if (object.type() == typeid(double)) {
@@ -80,6 +80,16 @@ void Interpreter::intepret(const std::vector<std::unique_ptr<Stmt>>& statements)
     // }
 }
 
+void Interpreter::checkNumberOperands(const Token& op, const std::any& left,
+                                      const std::any& right) const
+{
+    if (left.type() == typeid(double) && right.type() == typeid(double)) {
+        return;
+    }
+
+    //throw RuntimeError(op, "Operands must be numbers");
+}
+
 
 
 void Interpreter::execute(const Stmt& stmt)
@@ -105,6 +115,19 @@ std::any Interpreter::visitBinaryExpr(const BinaryExpr& expr){
     const auto right = evaluate(expr.getRightExpr());
 
     switch (expr.getOp().getType()){
+        // comparison operators
+        case TokenType::GREATER:
+            checkNumberOperands(expr.getOp(), left, right);
+            return std::any_cast<double>(left) > std::any_cast<double>(right);
+        case TokenType::GREATER_EQUAL:
+            checkNumberOperands(expr.getOp(), left, right);
+            return std::any_cast<double>(left) >= std::any_cast<double>(right);
+        case TokenType::LESS:
+            checkNumberOperands(expr.getOp(), left, right);
+            return std::any_cast<double>(left) < std::any_cast<double>(right);
+        case TokenType::LESS_EQUAL:
+            checkNumberOperands(expr.getOp(), left, right);
+            return std::any_cast<double>(left) <= std::any_cast<double>(right);
         case TokenType::PLUS:
             if (left.type() == typeid(double) && right.type() == typeid(double)) {
                 return std::any_cast<double>(left) + std::any_cast<double>(right);
