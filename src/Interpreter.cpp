@@ -108,6 +108,34 @@ std::any Interpreter::evaluate(const Expr& expr)
     return expr.accept(*this);
 }
 
+bool Interpreter::isEqual(const std::any& left, const std::any& right) const
+{
+    // nil is only equal to nil
+    if (!left.has_value() && !right.has_value()) {
+        return true;
+    }
+    if (!left.has_value()) {
+        return false;
+    }
+
+    if (left.type() != right.type()) {
+        return false;
+    }
+
+    if (left.type() == typeid(bool)) {
+        return std::any_cast<bool>(left) == std::any_cast<bool>(right);
+    }
+
+    if (left.type() == typeid(double)) {
+        return std::any_cast<double>(left) == std::any_cast<double>(right);
+    }
+
+    if (left.type() == typeid(std::string)) {
+        return std::any_cast<std::string>(left) == std::any_cast<std::string>(right);
+    }
+
+    return false;
+}
 
 std::any Interpreter::visitBinaryExpr(const BinaryExpr& expr){
     //obtain left and right values
@@ -115,6 +143,11 @@ std::any Interpreter::visitBinaryExpr(const BinaryExpr& expr){
     const auto right = evaluate(expr.getRightExpr());
 
     switch (expr.getOp().getType()){
+         // equality operators
+        case TokenType::BANG_EQUAL:
+            return !isEqual(left, right);
+        case TokenType::EQUAL_EQUAL:
+            return isEqual(left, right);
         // comparison operators
         case TokenType::GREATER:
             checkNumberOperands(expr.getOp(), left, right);

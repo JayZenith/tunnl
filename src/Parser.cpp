@@ -118,6 +118,11 @@ std::unique_ptr<Expr> Parser::andExpression(){
 std::unique_ptr<Expr> Parser::equality(){
     // equality → comparison ( ( "!=" | "==" ) comparison )* ;
     auto expr = comparison();
+    while (match(TokenType::BANG_EQUAL, TokenType::EQUAL_EQUAL)) {
+        auto op = previous();
+        auto right = comparison();
+        expr = std::make_unique<BinaryExpr>(std::move(expr), op, std::move(right));
+    }
 
     return expr;
 }

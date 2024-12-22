@@ -31,6 +31,9 @@ public:
     std::any evaluate(const Expr& expr);
 
 private:
+    bool isEqual(const std::any& left, const std::any& right) const;
+
+
     void checkNumberOperands(const Token& op, const std::any& left, const std::any& right) const;
 
 
