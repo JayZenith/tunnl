@@ -7,9 +7,12 @@ lox: \
   CMakeFiles/lox.dir/src/Token.cpp.o \
   CMakeFiles/lox.dir/src/Parser.cpp.o \
   CMakeFiles/lox.dir/src/Interpreter.cpp.o \
+  CMakeFiles/lox.dir/src/Environment.cpp.o \
   CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.o \
   CMakeFiles/lox.dir/src/Expr/BinaryExpr.cpp.o \
+  CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.o \
   CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.o \
+  CMakeFiles/lox.dir/src/Stmt/VarStmt.cpp.o \
   /usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.so \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libm.so \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libm.so \
@@ -54,11 +57,17 @@ CMakeFiles/lox.dir/src/Parser.cpp.o:
 
 CMakeFiles/lox.dir/src/Interpreter.cpp.o:
 
+CMakeFiles/lox.dir/src/Environment.cpp.o:
+
 CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.o:
 
 CMakeFiles/lox.dir/src/Expr/BinaryExpr.cpp.o:
 
+CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.o:
+
 CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.o:
+
+CMakeFiles/lox.dir/src/Stmt/VarStmt.cpp.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.so:
 

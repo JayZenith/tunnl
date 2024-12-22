@@ -220,11 +220,16 @@ CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.o: /home/jayz/Desktop/C++Interpreter
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h
 
+CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.o: /home/jayz/Desktop/C++Interpreter/src/Expr/VarExpr.cpp \
+  /usr/include/stdc-predef.h
+
 CMakeFiles/lox.dir/src/Interpreter.cpp.o: /home/jayz/Desktop/C++Interpreter/src/Interpreter.cpp \
+  /home/jayz/Desktop/C++Interpreter/include/lox/Environment.h \
   /home/jayz/Desktop/C++Interpreter/include/lox/Expr/BinaryExpr.h \
   /home/jayz/Desktop/C++Interpreter/include/lox/Expr/Expr.h \
   /home/jayz/Desktop/C++Interpreter/include/lox/Expr/ExprVisitor.h \
   /home/jayz/Desktop/C++Interpreter/include/lox/Expr/LiteralExpr.h \
+  /home/jayz/Desktop/C++Interpreter/include/lox/Expr/VarExpr.h \
   /home/jayz/Desktop/C++Interpreter/include/lox/Interpreter.h \
   /home/jayz/Desktop/C++Interpreter/include/lox/Stmt/PrintStmt.h \
   /home/jayz/Desktop/C++Interpreter/include/lox/Stmt/Stmt.h \
@@ -255,12 +260,16 @@ CMakeFiles/lox.dir/src/Interpreter.cpp.o: /home/jayz/Desktop/C++Interpreter/src/
   /usr/include/c++/13/bits/cpp_type_traits.h \
   /usr/include/c++/13/bits/cxxabi_forced.h \
   /usr/include/c++/13/bits/cxxabi_init_exception.h \
+  /usr/include/c++/13/bits/enable_special_members.h \
+  /usr/include/c++/13/bits/erase_if.h \
   /usr/include/c++/13/bits/exception.h \
   /usr/include/c++/13/bits/exception_defines.h \
   /usr/include/c++/13/bits/exception_ptr.h \
   /usr/include/c++/13/bits/functexcept.h \
   /usr/include/c++/13/bits/functional_hash.h \
   /usr/include/c++/13/bits/hash_bytes.h \
+  /usr/include/c++/13/bits/hashtable.h \
+  /usr/include/c++/13/bits/hashtable_policy.h \
   /usr/include/c++/13/bits/invoke.h \
   /usr/include/c++/13/bits/ios_base.h \
   /usr/include/c++/13/bits/istream.tcc \
@@ -274,6 +283,7 @@ CMakeFiles/lox.dir/src/Interpreter.cpp.o: /home/jayz/Desktop/C++Interpreter/src/
   /usr/include/c++/13/bits/move.h \
   /usr/include/c++/13/bits/nested_exception.h \
   /usr/include/c++/13/bits/new_allocator.h \
+  /usr/include/c++/13/bits/node_handle.h \
   /usr/include/c++/13/bits/ostream.tcc \
   /usr/include/c++/13/bits/ostream_insert.h \
   /usr/include/c++/13/bits/postypes.h \
@@ -304,6 +314,7 @@ CMakeFiles/lox.dir/src/Interpreter.cpp.o: /home/jayz/Desktop/C++Interpreter/src/
   /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
   /usr/include/c++/13/bits/unique_ptr.h \
+  /usr/include/c++/13/bits/unordered_map.h \
   /usr/include/c++/13/bits/uses_allocator.h \
   /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
@@ -361,6 +372,7 @@ CMakeFiles/lox.dir/src/Interpreter.cpp.o: /home/jayz/Desktop/C++Interpreter/src/
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
+  /usr/include/c++/13/unordered_map \
   /usr/include/c++/13/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
@@ -478,8 +490,10 @@ CMakeFiles/lox.dir/src/Parser.cpp.o: /home/jayz/Desktop/C++Interpreter/src/Parse
   /home/jayz/Desktop/C++Interpreter/include/lox/Stmt/Stmt.h \
   /home/jayz/Desktop/C++Interpreter/include/lox/Expr/BinaryExpr.h \
   /home/jayz/Desktop/C++Interpreter/include/lox/Expr/LiteralExpr.h \
+  /home/jayz/Desktop/C++Interpreter/include/lox/Expr/VarExpr.h \
   /home/jayz/Desktop/C++Interpreter/include/lox/Parser.h \
   /home/jayz/Desktop/C++Interpreter/include/lox/Stmt/PrintStmt.h \
+  /home/jayz/Desktop/C++Interpreter/include/lox/Stmt/VarStmt.h \
   /home/jayz/Desktop/C++Interpreter/include/lox/Token.h \
   /home/jayz/Desktop/C++Interpreter/include/lox/TokenType.h \
   /usr/include/alloca.h \
@@ -1497,11 +1511,15 @@ CMakeFiles/lox.dir/src/Parser.cpp.o:
 
 /home/jayz/Desktop/C++Interpreter/src/Token.cpp:
 
-/usr/include/c++/13/bits/unordered_map.h:
+/home/jayz/Desktop/C++Interpreter/include/lox/Parser.h:
 
-/usr/include/c++/13/bits/hashtable_policy.h:
+/home/jayz/Desktop/C++Interpreter/src/Parser.cpp:
 
-/usr/include/c++/13/bits/erase_if.h:
+/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
+
+/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
@@ -1559,6 +1577,10 @@ CMakeFiles/lox.dir/src/Parser.cpp.o:
 
 /usr/include/c++/13/ext/alloc_traits.h:
 
+/home/jayz/Desktop/C++Interpreter/include/lox/Scanner.h:
+
+/usr/include/c++/13/ext/type_traits.h:
+
 /usr/include/c++/13/ext/string_conversions.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
@@ -1611,6 +1633,8 @@ CMakeFiles/lox.dir/src/Parser.cpp.o:
 
 /usr/include/c++/13/memory:
 
+/home/jayz/Desktop/C++Interpreter/include/lox/Stmt/VarStmt.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
@@ -1651,10 +1675,6 @@ CMakeFiles/lox.dir/src/Parser.cpp.o:
 
 /usr/include/c++/13/bits/stl_raw_storage_iter.h:
 
-/usr/include/c++/13/bits/hashtable.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
-
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
 /home/jayz/Desktop/C++Interpreter/include/lox/Interpreter.h:
@@ -1669,21 +1689,27 @@ CMakeFiles/lox.dir/src/Parser.cpp.o:
 
 /usr/include/c++/13/bits/stl_iterator_base_types.h:
 
+/home/jayz/Desktop/C++Interpreter/src/Scanner.cpp:
+
+/usr/include/c++/13/bits/ptr_traits.h:
+
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
+
+/usr/include/c++/13/bits/char_traits.h:
 
 /home/jayz/Desktop/C++Interpreter/src/Expr/BinaryExpr.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
+/usr/include/c++/13/bits/hashtable_policy.h:
+
 /usr/include/stdc-predef.h:
 
 /usr/include/c++/13/tr1/special_function_util.h:
-
-/usr/include/c++/13/unordered_map:
-
-/usr/include/c++/13/bits/allocator.h:
 
 /usr/include/c++/13/bits/stl_bvector.h:
 
@@ -1733,9 +1759,11 @@ CMakeFiles/lox.dir/src/Parser.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
 /usr/include/c++/13/bits/move.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
+
+/usr/include/c++/13/any:
 
 /usr/include/c++/13/bits/exception.h:
 
@@ -1837,6 +1865,8 @@ CMakeFiles/lox.dir/src/Parser.cpp.o:
 
 /usr/include/c++/13/bits/shared_ptr_atomic.h:
 
+/usr/include/c++/13/bits/erase_if.h:
+
 /usr/include/c++/13/bits/stl_algobase.h:
 
 /usr/include/c++/13/bits/stl_construct.h:
@@ -1897,8 +1927,6 @@ CMakeFiles/lox.dir/src/Parser.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
-
 /usr/include/asm-generic/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
@@ -1931,10 +1959,6 @@ CMakeFiles/lox.dir/src/Parser.cpp.o:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
 
-/usr/include/c++/13/bits/node_handle.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
@@ -1949,6 +1973,20 @@ CMakeFiles/lox.dir/src/Parser.cpp.o:
 
 /home/jayz/Desktop/C++Interpreter/src/Expr/LiteralExpr.cpp:
 
+/home/jayz/Desktop/C++Interpreter/src/Expr/VarExpr.cpp:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/home/jayz/Desktop/C++Interpreter/include/lox/Expr/VarExpr.h:
+
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+
+/usr/include/c++/13/bits/streambuf_iterator.h:
+
+/usr/include/c++/13/ostream:
+
+/usr/include/c++/13/tr1/riemann_zeta.tcc:
+
 /lib64/ld-linux-x86-64.so.2:
 
 /home/jayz/Desktop/C++Interpreter/include/lox/Stmt/PrintStmt.h:
@@ -1961,35 +1999,35 @@ CMakeFiles/lox.dir/src/Parser.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
+/usr/include/c++/13/bits/enable_special_members.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+
+/usr/include/c++/13/bits/hashtable.h:
+
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/c++/13/bits/locale_classes.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /usr/include/c++/13/bits/locale_classes.tcc:
 
 /usr/include/c++/13/bits/locale_facets.h:
 
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/include/c++/13/bits/node_handle.h:
+
 /usr/include/c++/13/bits/ostream.tcc:
 
 /usr/include/c++/13/bits/stl_vector.h:
 
-/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
-
-/usr/include/c++/13/bits/streambuf_iterator.h:
-
-/usr/include/c++/13/ostream:
-
-/usr/include/c++/13/tr1/riemann_zeta.tcc:
+/usr/include/c++/13/bits/unordered_map.h:
 
 /usr/include/c++/13/optional:
 
 /usr/include/c++/13/bits/vector.tcc:
 
 /usr/include/c++/13/cmath:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
 
 /usr/include/c++/13/ctime:
 
@@ -1998,6 +2036,8 @@ CMakeFiles/lox.dir/src/Parser.cpp.o:
 /usr/include/c++/13/ios:
 
 /usr/include/c++/13/iostream:
+
+/home/jayz/Desktop/C++Interpreter/include/lox/Environment.h:
 
 /usr/include/c++/13/istream:
 
@@ -2013,6 +2053,10 @@ CMakeFiles/lox.dir/src/Parser.cpp.o:
 
 /usr/include/c++/13/tr1/legendre_function.tcc:
 
+/usr/include/c++/13/bits/allocator.h:
+
+/usr/include/c++/13/unordered_map:
+
 /usr/include/c++/13/vector:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
@@ -2020,25 +2064,3 @@ CMakeFiles/lox.dir/src/Parser.cpp.o:
 /usr/include/c++/13/string_view:
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
-
-/usr/include/c++/13/any:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
-
-/usr/include/c++/13/bits/char_traits.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
-
-/home/jayz/Desktop/C++Interpreter/src/Parser.cpp:
-
-/home/jayz/Desktop/C++Interpreter/include/lox/Parser.h:
-
-/usr/include/c++/13/bits/ptr_traits.h:
-
-/home/jayz/Desktop/C++Interpreter/src/Scanner.cpp:
-
-/usr/include/c++/13/ext/type_traits.h:
-
-/home/jayz/Desktop/C++Interpreter/include/lox/Scanner.h:
-
-/usr/include/c++/13/bits/enable_special_members.h:

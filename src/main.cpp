@@ -10,11 +10,12 @@
 #include "../include/lox/Parser.h"
 
 
+
 void run(std::string& contents){
     Scanner scanner(contents);
     Parser parser{scanner.scanTokens()};
     const auto statements = parser.parse();
-    Interpreter I;
+    Interpreter I(std::cout);
     I.intepret(statements);
     
 }

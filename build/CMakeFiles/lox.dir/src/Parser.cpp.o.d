@@ -163,8 +163,10 @@ CMakeFiles/lox.dir/src/Parser.cpp.o: \
  /home/jayz/Desktop/C++Interpreter/src/../include/lox/Token.h \
  /home/jayz/Desktop/C++Interpreter/src/../include/lox/TokenType.h \
  /home/jayz/Desktop/C++Interpreter/src/../include/lox/Stmt/PrintStmt.h \
+ /home/jayz/Desktop/C++Interpreter/src/../include/lox/Stmt/VarStmt.h \
  /home/jayz/Desktop/C++Interpreter/src/../include/lox/Expr/LiteralExpr.h \
  /home/jayz/Desktop/C++Interpreter/src/../include/lox/Expr/BinaryExpr.h \
+ /home/jayz/Desktop/C++Interpreter/src/../include/lox/Expr/VarExpr.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/ostream \
  /usr/include/c++/13/ios /usr/include/c++/13/bits/ios_base.h \
  /usr/include/c++/13/bits/locale_classes.h \

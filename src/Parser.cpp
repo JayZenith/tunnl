@@ -1,8 +1,12 @@
 #include "../include/lox/Parser.h"
 #include "../include/lox/Stmt/PrintStmt.h"
+#include "../include/lox/Stmt/VarStmt.h"
+
 #include "../include/lox/Token.h"
 #include "../include/lox/Expr/LiteralExpr.h"
 #include "../include/lox/Expr/BinaryExpr.h"
+#include "../include/lox/Expr/VarExpr.h"
+
 #include <iostream>
 
 #include <memory>
@@ -23,8 +27,27 @@ std::vector<std::unique_ptr<Stmt>> Parser::parse()
 
 std::unique_ptr<Stmt> Parser::declaration()
 {
+    // declaration → varDecl | statement ;
+    if (match(TokenType::VAR)) {
+        return varDeclaration();
+    }
     return statement();
 }
+
+std::unique_ptr<Stmt> Parser::varDeclaration()
+{
+    // varDeclaration → IDENTIFIER ("=" expression)? ";";
+    auto name = consume(TokenType::IDENTIFIER, "Expect variable name");
+
+    std::unique_ptr<Expr> initializer;
+    if (match(TokenType::EQUAL)) {
+        initializer = expression();
+    }
+
+    consume(TokenType::SEMICOLON, "Expect ';' after variable declaration");
+    return std::make_unique<VarStmt>(name, std::move(initializer));
+}
+
 
 std::unique_ptr<Stmt> Parser::statement()
 {
@@ -162,6 +185,10 @@ std::unique_ptr<Expr> Parser::primary()
 
     if (match(TokenType::FALSE)) {
         return std::make_unique<LiteralExpr>(false);
+    }
+
+    if (match(TokenType::IDENTIFIER)) {
+        return std::make_unique<VarExpr>(previous());
     }
 
     return NULL;

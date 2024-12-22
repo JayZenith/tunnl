@@ -12,8 +12,11 @@ add_executable(lox src/main.cpp
                    src/Token.cpp 
                    src/Parser.cpp
                    src/Interpreter.cpp
+                   src/Environment.cpp
                    src/Expr/LiteralExpr.cpp
                    src/Expr/BinaryExpr.cpp
+                   src/Expr/VarExpr.cpp
                    src/Stmt/PrintStmt.cpp
+                   src/Stmt/VarStmt.cpp
               )
 

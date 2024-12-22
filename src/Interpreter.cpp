@@ -1,4 +1,6 @@
 #include "../include/lox/Interpreter.h"
+#include "../include/lox/Environment.h"
+
 
 
 // #include "../include/lox/Lox.h"
@@ -7,10 +9,13 @@
 
 #include "../include/lox/Expr/LiteralExpr.h"
 #include "../include/lox/Expr/BinaryExpr.h"
+#include "../include/lox/Expr/VarExpr.h"
+
 
 
 
 #include "../include/lox/Stmt/PrintStmt.h"
+#include "../include/lox/Stmt/VarStmt.h"
 #include <any>
 #include <cassert>
 #include <cmath>
@@ -53,10 +58,12 @@ std::string stringify(const std::any& object)
 
 
 
-
-
-Interpreter::Interpreter() 
-{ }
+Interpreter::Interpreter(std::ostream& out) :
+    out(out), globals(std::make_unique<Environment>()), globalEnvironment(globals.get())
+{
+    globals->define("clock", NULL);
+    environment = std::move(globals);
+}
 
 Interpreter::~Interpreter() = default;
 
@@ -112,7 +119,6 @@ std::any Interpreter::visitBinaryExpr(const BinaryExpr& expr){
 
 std::any Interpreter::visitLiteralExpr(const LiteralExpr& expr)
 {
-    
     return expr.getLiteral();
 }
 
@@ -127,6 +133,22 @@ std::any Interpreter::visitPrintStmt(const PrintStmt& stmt)
     return {};
 }
 
+std::any Interpreter::visitVarExpr(const VarExpr& expr)
+{
+    assert(environment != nullptr);
+    return environment->get(expr.getName());
+}
 
+std::any Interpreter::visitVarStmt(const VarStmt& stmt)
+{
+    std::any value;
+    if (stmt.hasInitializer()) {
+        value = evaluate(stmt.getInitializer());
+    }
+
+    assert(environment != nullptr);
+    environment->define(stmt.getName().getText(), value);
+    return {};
+}
 
 

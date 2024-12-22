@@ -129,6 +129,30 @@ lox/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/build
 .PHONY : lox/fast
 
+src/Environment.o: src/Environment.cpp.o
+.PHONY : src/Environment.o
+
+# target to build an object file
+src/Environment.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Environment.cpp.o
+.PHONY : src/Environment.cpp.o
+
+src/Environment.i: src/Environment.cpp.i
+.PHONY : src/Environment.i
+
+# target to preprocess a source file
+src/Environment.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Environment.cpp.i
+.PHONY : src/Environment.cpp.i
+
+src/Environment.s: src/Environment.cpp.s
+.PHONY : src/Environment.s
+
+# target to generate assembly for a file
+src/Environment.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Environment.cpp.s
+.PHONY : src/Environment.cpp.s
+
 src/Expr/BinaryExpr.o: src/Expr/BinaryExpr.cpp.o
 .PHONY : src/Expr/BinaryExpr.o
 
@@ -176,6 +200,30 @@ src/Expr/LiteralExpr.s: src/Expr/LiteralExpr.cpp.s
 src/Expr/LiteralExpr.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.s
 .PHONY : src/Expr/LiteralExpr.cpp.s
+
+src/Expr/VarExpr.o: src/Expr/VarExpr.cpp.o
+.PHONY : src/Expr/VarExpr.o
+
+# target to build an object file
+src/Expr/VarExpr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.o
+.PHONY : src/Expr/VarExpr.cpp.o
+
+src/Expr/VarExpr.i: src/Expr/VarExpr.cpp.i
+.PHONY : src/Expr/VarExpr.i
+
+# target to preprocess a source file
+src/Expr/VarExpr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.i
+.PHONY : src/Expr/VarExpr.cpp.i
+
+src/Expr/VarExpr.s: src/Expr/VarExpr.cpp.s
+.PHONY : src/Expr/VarExpr.s
+
+# target to generate assembly for a file
+src/Expr/VarExpr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.s
+.PHONY : src/Expr/VarExpr.cpp.s
 
 src/Interpreter.o: src/Interpreter.cpp.o
 .PHONY : src/Interpreter.o
@@ -273,6 +321,30 @@ src/Stmt/PrintStmt.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.s
 .PHONY : src/Stmt/PrintStmt.cpp.s
 
+src/Stmt/VarStmt.o: src/Stmt/VarStmt.cpp.o
+.PHONY : src/Stmt/VarStmt.o
+
+# target to build an object file
+src/Stmt/VarStmt.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Stmt/VarStmt.cpp.o
+.PHONY : src/Stmt/VarStmt.cpp.o
+
+src/Stmt/VarStmt.i: src/Stmt/VarStmt.cpp.i
+.PHONY : src/Stmt/VarStmt.i
+
+# target to preprocess a source file
+src/Stmt/VarStmt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Stmt/VarStmt.cpp.i
+.PHONY : src/Stmt/VarStmt.cpp.i
+
+src/Stmt/VarStmt.s: src/Stmt/VarStmt.cpp.s
+.PHONY : src/Stmt/VarStmt.s
+
+# target to generate assembly for a file
+src/Stmt/VarStmt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Stmt/VarStmt.cpp.s
+.PHONY : src/Stmt/VarStmt.cpp.s
+
 src/Token.o: src/Token.cpp.o
 .PHONY : src/Token.o
 
@@ -330,12 +402,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... lox"
+	@echo "... src/Environment.o"
+	@echo "... src/Environment.i"
+	@echo "... src/Environment.s"
 	@echo "... src/Expr/BinaryExpr.o"
 	@echo "... src/Expr/BinaryExpr.i"
 	@echo "... src/Expr/BinaryExpr.s"
 	@echo "... src/Expr/LiteralExpr.o"
 	@echo "... src/Expr/LiteralExpr.i"
 	@echo "... src/Expr/LiteralExpr.s"
+	@echo "... src/Expr/VarExpr.o"
+	@echo "... src/Expr/VarExpr.i"
+	@echo "... src/Expr/VarExpr.s"
 	@echo "... src/Interpreter.o"
 	@echo "... src/Interpreter.i"
 	@echo "... src/Interpreter.s"
@@ -348,6 +426,9 @@ help:
 	@echo "... src/Stmt/PrintStmt.o"
 	@echo "... src/Stmt/PrintStmt.i"
 	@echo "... src/Stmt/PrintStmt.s"
+	@echo "... src/Stmt/VarStmt.o"
+	@echo "... src/Stmt/VarStmt.i"
+	@echo "... src/Stmt/VarStmt.s"
 	@echo "... src/Token.o"
 	@echo "... src/Token.i"
 	@echo "... src/Token.s"

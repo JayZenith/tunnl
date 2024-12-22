@@ -142,10 +142,24 @@ CMakeFiles/lox.dir/src/Interpreter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lox.dir/src/Interpreter.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jayz/Desktop/C++Interpreter/src/Interpreter.cpp -o CMakeFiles/lox.dir/src/Interpreter.cpp.s
 
+CMakeFiles/lox.dir/src/Environment.cpp.o: CMakeFiles/lox.dir/flags.make
+CMakeFiles/lox.dir/src/Environment.cpp.o: /home/jayz/Desktop/C++Interpreter/src/Environment.cpp
+CMakeFiles/lox.dir/src/Environment.cpp.o: CMakeFiles/lox.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jayz/Desktop/C++Interpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/lox.dir/src/Environment.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lox.dir/src/Environment.cpp.o -MF CMakeFiles/lox.dir/src/Environment.cpp.o.d -o CMakeFiles/lox.dir/src/Environment.cpp.o -c /home/jayz/Desktop/C++Interpreter/src/Environment.cpp
+
+CMakeFiles/lox.dir/src/Environment.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lox.dir/src/Environment.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jayz/Desktop/C++Interpreter/src/Environment.cpp > CMakeFiles/lox.dir/src/Environment.cpp.i
+
+CMakeFiles/lox.dir/src/Environment.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lox.dir/src/Environment.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jayz/Desktop/C++Interpreter/src/Environment.cpp -o CMakeFiles/lox.dir/src/Environment.cpp.s
+
 CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.o: CMakeFiles/lox.dir/flags.make
 CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.o: /home/jayz/Desktop/C++Interpreter/src/Expr/LiteralExpr.cpp
 CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.o: CMakeFiles/lox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jayz/Desktop/C++Interpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jayz/Desktop/C++Interpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.o -MF CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.o.d -o CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.o -c /home/jayz/Desktop/C++Interpreter/src/Expr/LiteralExpr.cpp
 
 CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.i: cmake_force
@@ -159,7 +173,7 @@ CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.s: cmake_force
 CMakeFiles/lox.dir/src/Expr/BinaryExpr.cpp.o: CMakeFiles/lox.dir/flags.make
 CMakeFiles/lox.dir/src/Expr/BinaryExpr.cpp.o: /home/jayz/Desktop/C++Interpreter/src/Expr/BinaryExpr.cpp
 CMakeFiles/lox.dir/src/Expr/BinaryExpr.cpp.o: CMakeFiles/lox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jayz/Desktop/C++Interpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/lox.dir/src/Expr/BinaryExpr.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jayz/Desktop/C++Interpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/lox.dir/src/Expr/BinaryExpr.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lox.dir/src/Expr/BinaryExpr.cpp.o -MF CMakeFiles/lox.dir/src/Expr/BinaryExpr.cpp.o.d -o CMakeFiles/lox.dir/src/Expr/BinaryExpr.cpp.o -c /home/jayz/Desktop/C++Interpreter/src/Expr/BinaryExpr.cpp
 
 CMakeFiles/lox.dir/src/Expr/BinaryExpr.cpp.i: cmake_force
@@ -170,10 +184,24 @@ CMakeFiles/lox.dir/src/Expr/BinaryExpr.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lox.dir/src/Expr/BinaryExpr.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jayz/Desktop/C++Interpreter/src/Expr/BinaryExpr.cpp -o CMakeFiles/lox.dir/src/Expr/BinaryExpr.cpp.s
 
+CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.o: CMakeFiles/lox.dir/flags.make
+CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.o: /home/jayz/Desktop/C++Interpreter/src/Expr/VarExpr.cpp
+CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.o: CMakeFiles/lox.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jayz/Desktop/C++Interpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.o -MF CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.o.d -o CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.o -c /home/jayz/Desktop/C++Interpreter/src/Expr/VarExpr.cpp
+
+CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jayz/Desktop/C++Interpreter/src/Expr/VarExpr.cpp > CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.i
+
+CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jayz/Desktop/C++Interpreter/src/Expr/VarExpr.cpp -o CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.s
+
 CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.o: CMakeFiles/lox.dir/flags.make
 CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.o: /home/jayz/Desktop/C++Interpreter/src/Stmt/PrintStmt.cpp
 CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.o: CMakeFiles/lox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jayz/Desktop/C++Interpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jayz/Desktop/C++Interpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.o -MF CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.o.d -o CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.o -c /home/jayz/Desktop/C++Interpreter/src/Stmt/PrintStmt.cpp
 
 CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.i: cmake_force
@@ -184,6 +212,20 @@ CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jayz/Desktop/C++Interpreter/src/Stmt/PrintStmt.cpp -o CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.s
 
+CMakeFiles/lox.dir/src/Stmt/VarStmt.cpp.o: CMakeFiles/lox.dir/flags.make
+CMakeFiles/lox.dir/src/Stmt/VarStmt.cpp.o: /home/jayz/Desktop/C++Interpreter/src/Stmt/VarStmt.cpp
+CMakeFiles/lox.dir/src/Stmt/VarStmt.cpp.o: CMakeFiles/lox.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jayz/Desktop/C++Interpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/lox.dir/src/Stmt/VarStmt.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lox.dir/src/Stmt/VarStmt.cpp.o -MF CMakeFiles/lox.dir/src/Stmt/VarStmt.cpp.o.d -o CMakeFiles/lox.dir/src/Stmt/VarStmt.cpp.o -c /home/jayz/Desktop/C++Interpreter/src/Stmt/VarStmt.cpp
+
+CMakeFiles/lox.dir/src/Stmt/VarStmt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lox.dir/src/Stmt/VarStmt.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jayz/Desktop/C++Interpreter/src/Stmt/VarStmt.cpp > CMakeFiles/lox.dir/src/Stmt/VarStmt.cpp.i
+
+CMakeFiles/lox.dir/src/Stmt/VarStmt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lox.dir/src/Stmt/VarStmt.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jayz/Desktop/C++Interpreter/src/Stmt/VarStmt.cpp -o CMakeFiles/lox.dir/src/Stmt/VarStmt.cpp.s
+
 # Object files for target lox
 lox_OBJECTS = \
 "CMakeFiles/lox.dir/src/main.cpp.o" \
@@ -191,9 +233,12 @@ lox_OBJECTS = \
 "CMakeFiles/lox.dir/src/Token.cpp.o" \
 "CMakeFiles/lox.dir/src/Parser.cpp.o" \
 "CMakeFiles/lox.dir/src/Interpreter.cpp.o" \
+"CMakeFiles/lox.dir/src/Environment.cpp.o" \
 "CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.o" \
 "CMakeFiles/lox.dir/src/Expr/BinaryExpr.cpp.o" \
-"CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.o"
+"CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.o" \
+"CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.o" \
+"CMakeFiles/lox.dir/src/Stmt/VarStmt.cpp.o"
 
 # External object files for target lox
 lox_EXTERNAL_OBJECTS =
@@ -203,13 +248,16 @@ lox: CMakeFiles/lox.dir/src/Scanner.cpp.o
 lox: CMakeFiles/lox.dir/src/Token.cpp.o
 lox: CMakeFiles/lox.dir/src/Parser.cpp.o
 lox: CMakeFiles/lox.dir/src/Interpreter.cpp.o
+lox: CMakeFiles/lox.dir/src/Environment.cpp.o
 lox: CMakeFiles/lox.dir/src/Expr/LiteralExpr.cpp.o
 lox: CMakeFiles/lox.dir/src/Expr/BinaryExpr.cpp.o
+lox: CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.o
 lox: CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.o
+lox: CMakeFiles/lox.dir/src/Stmt/VarStmt.cpp.o
 lox: CMakeFiles/lox.dir/build.make
 lox: CMakeFiles/lox.dir/compiler_depend.ts
 lox: CMakeFiles/lox.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/jayz/Desktop/C++Interpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable lox"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/jayz/Desktop/C++Interpreter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable lox"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lox.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

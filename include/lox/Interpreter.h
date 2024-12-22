@@ -10,6 +10,8 @@
 
 #include "Token.h"
 
+class Environment;
+
 class Expr;
 class Stmt;
 
@@ -17,11 +19,11 @@ class Stmt;
 //Derived class must override virtual classes in base class
 class Interpreter : public ExprVisitor<std::any>, public StmtVisitor<std::any> {
 public:
-    Interpreter(/*std::ostream& out*/);
+    Interpreter(std::ostream& out);
     ~Interpreter(); // for forward declaration of Environment
     void intepret(const std::vector<std::unique_ptr<Stmt>>& statements);
 
-    //Environment& getGlobalsEnvironment();
+    Environment& getGlobalsEnvironment();
 
     void execute(const Stmt& stmt);
     // void executeBlock(const std::vector<std::unique_ptr<Stmt>>& statements,
@@ -32,21 +34,24 @@ private:
     std::any visitBinaryExpr(const BinaryExpr& expr) override;
     std::any visitLiteralExpr(const LiteralExpr& expr) override;
     std::any visitPrintStmt(const PrintStmt& stmt) override;
+    std::any visitVarExpr(const VarExpr& expr) override;
 
-    // data
-    // std::unique_ptr<Environment> globals;
-    // Environment* globalEnvironment;
-    // std::unique_ptr<Environment> environment; // current environment
+    std::any visitVarStmt(const VarStmt& stmt) override;
 
-    // class EnterEnviromentGuard {
-    // public:
-    //     EnterEnviromentGuard(Interpreter& i, std::unique_ptr<Environment> env);
-    //     ~EnterEnviromentGuard();
+    //data
+    std::unique_ptr<Environment> globals;
+    Environment* globalEnvironment;
+    std::unique_ptr<Environment> environment; // current environment
 
-    // private:
-    //     Interpreter& i;
-    //     std::unique_ptr<Environment> previous;
-    // };
+    class EnterEnviromentGuard {
+    public:
+        EnterEnviromentGuard(Interpreter& i, std::unique_ptr<Environment> env);
+        ~EnterEnviromentGuard();
 
+    private:
+        Interpreter& i;
+        std::unique_ptr<Environment> previous;
+    };
+    std::ostream& out;
 };
 
