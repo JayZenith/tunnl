@@ -174,6 +174,7 @@ CMakeFiles/lox.dir/src/Interpreter.cpp.o: \
  /home/jayz/Desktop/C++Interpreter/src/../include/lox/Expr/VarExpr.h \
  /home/jayz/Desktop/C++Interpreter/src/../include/lox/Stmt/PrintStmt.h \
  /home/jayz/Desktop/C++Interpreter/src/../include/lox/Stmt/Stmt.h \
+ /home/jayz/Desktop/C++Interpreter/src/../include/lox/Stmt/IfStmt.h \
  /home/jayz/Desktop/C++Interpreter/src/../include/lox/Stmt/VarStmt.h \
  /usr/include/c++/13/cassert /usr/include/assert.h \
  /usr/include/c++/13/cmath /usr/include/math.h \

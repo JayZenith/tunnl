@@ -18,5 +18,6 @@ add_executable(lox src/main.cpp
                    src/Expr/VarExpr.cpp
                    src/Stmt/PrintStmt.cpp
                    src/Stmt/VarStmt.cpp
+                   src/Stmt/IfStmt.cpp
               )
 

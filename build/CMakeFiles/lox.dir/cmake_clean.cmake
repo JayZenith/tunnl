@@ -14,6 +14,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/lox.dir/src/Parser.cpp.o.d"
   "CMakeFiles/lox.dir/src/Scanner.cpp.o"
   "CMakeFiles/lox.dir/src/Scanner.cpp.o.d"
+  "CMakeFiles/lox.dir/src/Stmt/IfStmt.cpp.o"
+  "CMakeFiles/lox.dir/src/Stmt/IfStmt.cpp.o.d"
   "CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.o"
   "CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.o.d"
   "CMakeFiles/lox.dir/src/Stmt/VarStmt.cpp.o"

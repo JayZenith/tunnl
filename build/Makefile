@@ -297,6 +297,30 @@ src/Scanner.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Scanner.cpp.s
 .PHONY : src/Scanner.cpp.s
 
+src/Stmt/IfStmt.o: src/Stmt/IfStmt.cpp.o
+.PHONY : src/Stmt/IfStmt.o
+
+# target to build an object file
+src/Stmt/IfStmt.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Stmt/IfStmt.cpp.o
+.PHONY : src/Stmt/IfStmt.cpp.o
+
+src/Stmt/IfStmt.i: src/Stmt/IfStmt.cpp.i
+.PHONY : src/Stmt/IfStmt.i
+
+# target to preprocess a source file
+src/Stmt/IfStmt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Stmt/IfStmt.cpp.i
+.PHONY : src/Stmt/IfStmt.cpp.i
+
+src/Stmt/IfStmt.s: src/Stmt/IfStmt.cpp.s
+.PHONY : src/Stmt/IfStmt.s
+
+# target to generate assembly for a file
+src/Stmt/IfStmt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/src/Stmt/IfStmt.cpp.s
+.PHONY : src/Stmt/IfStmt.cpp.s
+
 src/Stmt/PrintStmt.o: src/Stmt/PrintStmt.cpp.o
 .PHONY : src/Stmt/PrintStmt.o
 
@@ -423,6 +447,9 @@ help:
 	@echo "... src/Scanner.o"
 	@echo "... src/Scanner.i"
 	@echo "... src/Scanner.s"
+	@echo "... src/Stmt/IfStmt.o"
+	@echo "... src/Stmt/IfStmt.i"
+	@echo "... src/Stmt/IfStmt.s"
 	@echo "... src/Stmt/PrintStmt.o"
 	@echo "... src/Stmt/PrintStmt.i"
 	@echo "... src/Stmt/PrintStmt.s"

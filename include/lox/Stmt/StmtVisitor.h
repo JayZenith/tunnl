@@ -2,7 +2,7 @@
 
 // class BlockStmt;
 // class ExpressionStmt;
-// class IfStmt;
+class IfStmt;
 // class FunctionStmt;
 class PrintStmt;
 // class ReturnStmt;
@@ -18,7 +18,7 @@ public:
     //we pass in the specific type 
     // virtual R visitBlockStmt(const BlockStmt& stmt) = 0;
     // virtual R visitExpressionStmt(const ExpressionStmt& stmt) = 0;
-    // virtual R visitIfStmt(const IfStmt& stmt) = 0;
+    virtual R visitIfStmt(const IfStmt& stmt) = 0;
     // virtual R visitFunctionStmt(const FunctionStmt& stmt) = 0;
     virtual R visitPrintStmt(const PrintStmt& stmt) = 0;
     // virtual R visitReturnStmt(const ReturnStmt& stmt) = 0;

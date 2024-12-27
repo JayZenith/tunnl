@@ -13,6 +13,7 @@ lox: \
   CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.o \
   CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.o \
   CMakeFiles/lox.dir/src/Stmt/VarStmt.cpp.o \
+  CMakeFiles/lox.dir/src/Stmt/IfStmt.cpp.o \
   /usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.so \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libm.so \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libm.so \
@@ -68,6 +69,8 @@ CMakeFiles/lox.dir/src/Expr/VarExpr.cpp.o:
 CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.o:
 
 CMakeFiles/lox.dir/src/Stmt/VarStmt.cpp.o:
+
+CMakeFiles/lox.dir/src/Stmt/IfStmt.cpp.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.so:
 

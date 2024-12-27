@@ -64,5 +64,11 @@
   "command": "/usr/bin/c++   -g -std=gnu++17 -o CMakeFiles/lox.dir/src/Stmt/VarStmt.cpp.o -c /home/jayz/Desktop/C++Interpreter/src/Stmt/VarStmt.cpp",
   "file": "/home/jayz/Desktop/C++Interpreter/src/Stmt/VarStmt.cpp",
   "output": "CMakeFiles/lox.dir/src/Stmt/VarStmt.cpp.o"
+},
+{
+  "directory": "/home/jayz/Desktop/C++Interpreter/build",
+  "command": "/usr/bin/c++   -g -std=gnu++17 -o CMakeFiles/lox.dir/src/Stmt/IfStmt.cpp.o -c /home/jayz/Desktop/C++Interpreter/src/Stmt/IfStmt.cpp",
+  "file": "/home/jayz/Desktop/C++Interpreter/src/Stmt/IfStmt.cpp",
+  "output": "CMakeFiles/lox.dir/src/Stmt/IfStmt.cpp.o"
 }
 ]

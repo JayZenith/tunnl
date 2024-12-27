@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/jayz/Desktop/C++Interpreter/src/Interpreter.cpp" "CMakeFiles/lox.dir/src/Interpreter.cpp.o" "gcc" "CMakeFiles/lox.dir/src/Interpreter.cpp.o.d"
   "/home/jayz/Desktop/C++Interpreter/src/Parser.cpp" "CMakeFiles/lox.dir/src/Parser.cpp.o" "gcc" "CMakeFiles/lox.dir/src/Parser.cpp.o.d"
   "/home/jayz/Desktop/C++Interpreter/src/Scanner.cpp" "CMakeFiles/lox.dir/src/Scanner.cpp.o" "gcc" "CMakeFiles/lox.dir/src/Scanner.cpp.o.d"
+  "/home/jayz/Desktop/C++Interpreter/src/Stmt/IfStmt.cpp" "CMakeFiles/lox.dir/src/Stmt/IfStmt.cpp.o" "gcc" "CMakeFiles/lox.dir/src/Stmt/IfStmt.cpp.o.d"
   "/home/jayz/Desktop/C++Interpreter/src/Stmt/PrintStmt.cpp" "CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.o" "gcc" "CMakeFiles/lox.dir/src/Stmt/PrintStmt.cpp.o.d"
   "/home/jayz/Desktop/C++Interpreter/src/Stmt/VarStmt.cpp" "CMakeFiles/lox.dir/src/Stmt/VarStmt.cpp.o" "gcc" "CMakeFiles/lox.dir/src/Stmt/VarStmt.cpp.o.d"
   "/home/jayz/Desktop/C++Interpreter/src/Token.cpp" "CMakeFiles/lox.dir/src/Token.cpp.o" "gcc" "CMakeFiles/lox.dir/src/Token.cpp.o.d"

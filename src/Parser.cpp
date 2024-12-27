@@ -1,5 +1,7 @@
 #include "../include/lox/Parser.h"
 #include "../include/lox/Stmt/PrintStmt.h"
+#include "../include/lox/Stmt/IfStmt.h"
+
 #include "../include/lox/Stmt/VarStmt.h"
 
 #include "../include/lox/Token.h"
@@ -60,6 +62,9 @@ std::unique_ptr<Stmt> Parser::statement()
     //             | block;
  
     //match defined in Header 
+    if (match(TokenType::IF)) {
+        return ifStatement();
+    }
     if (match(TokenType::PRINT)) {
 
         return printStatement();
@@ -68,6 +73,30 @@ std::unique_ptr<Stmt> Parser::statement()
     return expressionStatement(); 
 
 }
+
+std::unique_ptr<Stmt> Parser::ifStatement()
+{
+    // ifStmt → "if" "(" expression ")" statement ( "else" statement )? ;
+    consume(TokenType::LEFT_PAREN, "Expect '(' after 'if'.");
+    auto condition = expression();
+    consume(TokenType::RIGHT_PAREN, "Expect ')' after 'if'.");
+
+    consume(TokenType::LEFT_BRACE, "Expect '{' after 'if'.");
+    auto thenBranch = statement();
+    consume(TokenType::RIGHT_BRACE, "Expect '}' after 'if'.");
+
+    std::unique_ptr<Stmt> elseBranch;
+    if (match(TokenType::ELSE)) {
+        consume(TokenType::LEFT_BRACE, "Expect '{' after 'else'.");
+        elseBranch = statement();
+        consume(TokenType::RIGHT_BRACE, "Expect '}' after 'else'.");
+
+    }
+
+    return std::make_unique<IfStmt>(std::move(condition), std::move(thenBranch),
+                                    std::move(elseBranch));
+}
+
 
 std::unique_ptr<Stmt> Parser::printStatement()
 {

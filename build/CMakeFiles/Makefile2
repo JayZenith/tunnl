@@ -85,12 +85,12 @@ clean: CMakeFiles/lox.dir/clean
 CMakeFiles/lox.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lox.dir/build.make CMakeFiles/lox.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/jayz/Desktop/C++Interpreter/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target lox"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/jayz/Desktop/C++Interpreter/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target lox"
 .PHONY : CMakeFiles/lox.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lox.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayz/Desktop/C++Interpreter/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayz/Desktop/C++Interpreter/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lox.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayz/Desktop/C++Interpreter/build/CMakeFiles 0
 .PHONY : CMakeFiles/lox.dir/rule

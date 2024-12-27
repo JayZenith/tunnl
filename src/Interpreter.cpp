@@ -15,6 +15,8 @@
 
 
 #include "../include/lox/Stmt/PrintStmt.h"
+#include "../include/lox/Stmt/IfStmt.h"
+
 #include "../include/lox/Stmt/VarStmt.h"
 #include <any>
 #include <cassert>
@@ -108,6 +110,22 @@ std::any Interpreter::evaluate(const Expr& expr)
     return expr.accept(*this);
 }
 
+bool Interpreter::isTruthy(const std::any& object) const
+{
+    if (!object.has_value()) {
+        return false;
+    }
+
+    
+
+
+    if (object.type() == typeid(bool)) {
+        return std::any_cast<bool>(object);
+    }
+
+    return true;
+}
+
 bool Interpreter::isEqual(const std::any& left, const std::any& right) const
 {
     // nil is only equal to nil
@@ -178,6 +196,17 @@ std::any Interpreter::visitLiteralExpr(const LiteralExpr& expr)
     return expr.getLiteral();
 }
 
+std::any Interpreter::visitIfStmt(const IfStmt& stmt)
+{
+    if (isTruthy(evaluate(stmt.getCondition()))) {
+        execute(stmt.getThenBranch());
+    } else {
+        if (stmt.hasElseBranch()) {
+            execute(stmt.getElseBranch());
+        }
+    }
+    return {};
+}
 
 //with EXECUTE we get here 
 std::any Interpreter::visitPrintStmt(const PrintStmt& stmt)

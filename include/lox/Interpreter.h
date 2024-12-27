@@ -31,6 +31,7 @@ public:
     std::any evaluate(const Expr& expr);
 
 private:
+    bool isTruthy(const std::any& object) const;
     bool isEqual(const std::any& left, const std::any& right) const;
 
 
@@ -41,7 +42,7 @@ private:
     std::any visitLiteralExpr(const LiteralExpr& expr) override;
     std::any visitPrintStmt(const PrintStmt& stmt) override;
     std::any visitVarExpr(const VarExpr& expr) override;
-
+    std::any visitIfStmt(const IfStmt& stmt) override;
     std::any visitVarStmt(const VarStmt& stmt) override;
 
     //data
