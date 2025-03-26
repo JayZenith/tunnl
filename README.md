@@ -1,16 +1,9 @@
-C++ implementation of Lox 
+The Tunnl Language 
 =========================
 
-Writing the Lox Interpreter from [Crafting Interpreters book](http://craftinginterpreters.com/) by
-Bob Nystrom and writing Lox interpreter in C++. Will look to do this in Rust soon after. 
+The Tunnl Lanauge is a work-in-progress, dynamically-typed scripting language, simple and easy to use. 
 
-Chapters complete
----
 
-4. Scanning
-5. Represening code
-6. Parsing Expressions
-7. Evaluating Expressions
 
 Building
 ---
@@ -18,24 +11,37 @@ Building
 Just run CMake like this:
 
 ```sh
-# in root dir
-cmake <build-dir>
+# Create build directory
+mdkir build && cd build
+
+# Configure CMake in build dir
+cmake <root-dir>
 ```
 
-and then
+and then build 
 
 ```sh
-cmake --build ./build --target lox
+ cmake --build .
 ```
-
 
 Usage
 ---
 
-Run a simple example:
+Run a program using the following :
 
 ```sh
 # in build dir
-lox <program>
+tunnl <program>
 ```
 
+Or to activate the shell prompt just run:
+```sh
+# in build dir
+tunnl
+```
+
+
+Project Structure
+* include/ - Header Files
+* src/ - Source Files
+* tests/ - Test files 

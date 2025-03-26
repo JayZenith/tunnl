@@ -13,6 +13,7 @@
 
 void run(std::string& contents){
     Scanner scanner(contents);
+    std::cout << "h";
     Parser parser{scanner.scanTokens()};
     const auto statements = parser.parse();
     Interpreter I(std::cout);

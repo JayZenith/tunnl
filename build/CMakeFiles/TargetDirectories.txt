@@ -1,3 +1,0 @@
-/home/jayz/Desktop/C++Interpreter/build/CMakeFiles/lox.dir
-/home/jayz/Desktop/C++Interpreter/build/CMakeFiles/edit_cache.dir
-/home/jayz/Desktop/C++Interpreter/build/CMakeFiles/rebuild_cache.dir
