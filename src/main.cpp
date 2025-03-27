@@ -5,9 +5,9 @@
 #include <vector>
 #include <optional>
 
-#include "../include/lox/Interpreter.h"
-#include "../include/lox/Scanner.h"
-#include "../include/lox/Parser.h"
+#include "../include/tunnl/Interpreter.h"
+#include "../include/tunnl/Scanner.h"
+#include "../include/tunnl/Parser.h"
 
 
 

@@ -1,6 +1,6 @@
-#include "../include/lox/Environment.h"
+#include "../include/tunnl/Environment.h"
 
-#include "../include/lox/Token.h"
+#include "../include/tunnl/Token.h"
 
 #include <iostream>
 #include <cassert>

@@ -1,4 +1,4 @@
-#include "../include/lox/Scanner.h"
+#include "../include/tunnl/Scanner.h"
 
 #include <cctype> // isdigit, isalpha
 #include <iostream>
@@ -12,7 +12,7 @@ Scanner::Scanner(const std::string& source) : source(std::move(source))
         {"else", TokenType::ELSE},
         {"false", TokenType::FALSE},
         {"for", TokenType::FOR},
-        {"fun", TokenType::FUN},
+        {"fn", TokenType::FUN},
         {"if", TokenType::IF},
         {"nil", TokenType::NIL},
         {"or", TokenType::OR},
