@@ -1,0 +1,5 @@
+print "Testing for-loops...";
+for (quant i = 2; i < 20; i = i + 3) start
+    print i;
+end
+print "Done!";

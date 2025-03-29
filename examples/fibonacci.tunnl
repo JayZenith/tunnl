@@ -1,0 +1,20 @@
+fn fib(n) start
+    if (n <= 1) return n;
+    return fib(n - 2) + fib(n - 1);
+end
+
+
+fn factorial(n) start
+    if (n <= 1) return 1;
+    return factorial(n - 1) * n;
+end
+
+print "_______________________________";
+print("Factorial of 3 is:");
+print factorial(3);
+
+print "_______________________________";
+print "First 10 Fibonacci numbers are:";
+for (quant i = 0; i < 10; i = i + 1) start
+    print fib(i);
+end

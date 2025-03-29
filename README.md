@@ -1,47 +1,32 @@
-The Tunnl Language 
-=========================
+# A Tree-walk Lox Interpreter 
 
-The Tunnl Lanauge is a work-in-progress, dynamically-typed scripting language, simple and easy to use. 
+C++ implementation of the Lox interpreter in [*Crafting Interpreters*](http://craftinginterpreters.com). The original 
+implementation in the book is in Java. 
 
-
-
-Building
----
-
-Just run CMake like this:
-
-```sh
-# Create build directory
-mdkir build && cd build
-
-# Configure CMake in build dir
-cmake <root-dir>
+# Build and Usages
+To build the project, CMake 3.8 or higher is required.
+```shell
+mkdir build && cd build
+cmake .. && make
+```
+Execute a Lox source file:
+```shell
+./LoxInterpreter <filename>
+```
+Start a REPL:
+```shell
+./LoxInterpreter
 ```
 
-and then build 
+# The Lox Programming Language
 
-```sh
- cmake --build .
-```
+Lox is a dynamically typed, lexical scoping language supports
+automatic memory management. It also supports classes and inheritance.
+More details about Lox can be found in [this page](http://craftinginterpreters.com/the-lox-language.html).
 
-Usage
----
+# About The Book
 
-Run a program using the following :
-
-```sh
-# in build dir
-tunnl <program>
-```
-
-Or to activate the shell prompt just run:
-```sh
-# in build dir
-tunnl
-```
-
-
-Project Structure
-* include/ - Header Files
-* src/ - Source Files
-* tests/ - Test files 
+> *Crafting Interpreters* contains everything you need to implement a full-featured, efficient scripting language. 
+> You’ll learn both high-level concepts around parsing and semantics and gritty details like bytecode representation 
+> and garbage collection. Your brain will light up with new ideas, and your hands will get dirty and calloused. 
+> It’s a blast.

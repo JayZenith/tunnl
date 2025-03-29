@@ -1,0 +1,19 @@
+quant a = "global a";
+quant b = "global b";
+quant c = "global c";
+start
+  quant a = "outer a";
+  quant b = "outer b";
+  start
+    quant a = "inner a";
+    print a;
+    print b;
+    print c;
+  end
+  print a;
+  print b;
+  print c;
+end
+print a;
+print b;
+print c;

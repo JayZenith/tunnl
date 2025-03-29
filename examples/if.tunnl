@@ -1,0 +1,9 @@
+quant a = 20;
+quant b = 90;
+
+if ((a + b > 80) and (a > 10)) start
+    print "a + b > 80; a > 10";
+end 
+else start
+    print "a + b <= 80";
+end

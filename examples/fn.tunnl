@@ -1,0 +1,19 @@
+fn sayHi(first, last) start
+    print "Hi, " + first + " " + last + "!";
+end
+
+fn printCurrentTime() start
+    print "Current Unix Time is...";
+    print clock();
+end
+
+fn main() start
+    quant name = "tunnl";
+    quant surname = "user";
+
+    sayHi(name, surname);
+    printCurrentTime();
+end
+
+// later it'll be called automatically
+main();

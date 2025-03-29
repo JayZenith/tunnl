@@ -1,40 +1,7 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required (VERSION 3.8)
 
-project(TUNNL)
+project(Lox)
+set(CMAKE_CXX_STANDARD 14)
 
-# C++17 is required
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+add_executable (LoxInterpreter "Lox.cpp" "Lox.h" "scanner.h" "LoxInterpreter.h" "LoxInterpreter.cpp" "scanner.cpp" AST.cpp AST.h token.cpp token.h visitor.h AST_Printer.cpp AST_Printer.h parser.cpp parser.h interpreter.cpp interpreter.h lox_object.cpp lox_object.h interpreter_exceptions.h environment.cpp environment.h lox_callable.cpp lox_callable.h native_functions.cpp native_functions.h resolver.cpp resolver.h lox_class.cpp lox_class.h lox_instance.cpp lox_instance.h interpreter_exceptions.cpp)
 
-add_library(tunnl_test src/main.cpp 
-                   src/Scanner.cpp 
-                   src/Token.cpp 
-                   src/Parser.cpp
-                   src/Interpreter.cpp
-                   src/Environment.cpp
-                   src/Expr/LiteralExpr.cpp
-                   src/Expr/BinaryExpr.cpp
-                   src/Expr/VarExpr.cpp
-                   src/Stmt/PrintStmt.cpp
-                   src/Stmt/VarStmt.cpp
-                   src/Stmt/IfStmt.cpp
-              )
-
-
-add_executable(tunnl src/main.cpp 
-                   src/Scanner.cpp 
-                   src/Token.cpp 
-                   src/Parser.cpp
-                   src/Interpreter.cpp
-                   src/Environment.cpp
-                   src/Expr/LiteralExpr.cpp
-                   src/Expr/BinaryExpr.cpp
-                   src/Expr/VarExpr.cpp
-                   src/Stmt/PrintStmt.cpp
-                   src/Stmt/VarStmt.cpp
-                   src/Stmt/IfStmt.cpp
-              )
-
-# Enable testing
-enable_testing()
-add_subdirectory(tests)
