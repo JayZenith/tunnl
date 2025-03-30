@@ -1,5 +1,5 @@
-﻿#include "Lox.h"
-#include "LoxInterpreter.h"
+﻿#include "../include/tunnl/Lox.h"
+#include "../include/tunnl/LoxInterpreter.h"
 
 using namespace std;
 

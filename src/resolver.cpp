@@ -1,4 +1,4 @@
-#include "resolver.h"
+#include "../include/tunnl/resolver.h"
 
 extern bool had_error;
 

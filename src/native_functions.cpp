@@ -1,4 +1,4 @@
-#include "native_functions.h"
+#include "../include/tunnl/native_functions.h"
 
 shared_ptr<lox_object> native_clock::call(interpreter &i, vector<shared_ptr<lox_object>> &arguments)
 {

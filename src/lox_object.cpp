@@ -1,4 +1,4 @@
-#include "lox_object.h"
+#include "../include/tunnl/lox_object.h"
 
 lox_object::lox_object() {
     type = NIL;

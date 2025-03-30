@@ -1,4 +1,4 @@
-#include "LoxInterpreter.h"
+#include "../include/tunnl/LoxInterpreter.h"
 
 bool had_error;
 

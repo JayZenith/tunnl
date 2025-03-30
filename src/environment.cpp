@@ -1,7 +1,7 @@
-#include "environment.h"
+#include "../include/tunnl/environment.h"
 
 #include <utility>
-#include "lox_instance.h"
+#include "../include/tunnl/lox_instance.h"
 
 void environment::define(const string &name, shared_ptr<lox_object> l)
 {

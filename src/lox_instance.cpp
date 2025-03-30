@@ -1,7 +1,7 @@
-#include "lox_instance.h"
+#include "../include/tunnl/lox_instance.h"
 
 #include <utility>
-#include "lox_class.h"
+#include "../include/tunnl/lox_class.h"
 
 string lox_instance::to_string()
 {

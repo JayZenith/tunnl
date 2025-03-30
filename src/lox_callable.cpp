@@ -1,8 +1,8 @@
-#include "lox_callable.h"
+#include "../include/tunnl/lox_callable.h"
 
 #include <utility>
-#include "interpreter.h"
-#include "environment.h"
+#include "../include/tunnl/interpreter.h"
+#include "../include/tunnl/environment.h"
 
 shared_ptr<lox_object> lox_function::call(interpreter& i, vector<shared_ptr<lox_object>> &arguments)
 {
