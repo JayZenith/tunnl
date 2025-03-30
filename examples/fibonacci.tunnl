@@ -15,6 +15,6 @@ print factorial(3);
 
 print "_______________________________";
 print "First 10 Fibonacci numbers are:";
-for (quant i = 0; i < 10; i = i + 1) start
+for (tunnl i = 0; i < 10; i = i + 1) start
     print fib(i);
 end

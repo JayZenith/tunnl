@@ -8,8 +8,8 @@ fn printCurrentTime() start
 end
 
 fn main() start
-    quant name = "tunnl";
-    quant surname = "user";
+    tunnl name = "tunnl";
+    tunnl surname = "user";
 
     sayHi(name, surname);
     printCurrentTime();

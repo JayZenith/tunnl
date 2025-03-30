@@ -1,11 +1,11 @@
-quant a = "global a";
-quant b = "global b";
-quant c = "global c";
+tunnl a = "global a";
+tunnl b = "global b";
+tunnl c = "global c";
 start
-  quant a = "outer a";
-  quant b = "outer b";
+  tunnl a = "outer a";
+  tunnl b = "outer b";
   start
-    quant a = "inner a";
+    tunnl a = "inner a";
     print a;
     print b;
     print c;

@@ -316,7 +316,7 @@ scanner::scanner(string& code):code(code), start(0), current(0), line(1)
 	it.boolean = true;
 	this->keyword_table.insert(make_pair("true", Token(TRUE, "true", it, 0)));
 
-	this->keyword_table.insert(make_pair("quant", Token(VAR, "quant", iteral{}, 0)));
+	this->keyword_table.insert(make_pair("tunnl", Token(VAR, "tunnl", iteral{}, 0)));
 	this->keyword_table.insert(make_pair("while", Token(WHILE, "while", iteral{}, 0)));
 
 }
